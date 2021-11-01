@@ -1,0 +1,15 @@
+
+
+.dropdown {
+    position: relative;
+    margin: 5px;
+}
+/* .dropdown-content{
+    display: none;
+    min-width: 200px;
+  position: absolute;
+  z-index: 1;
+} */
+.dropdown:hover .dropdown-content{
+  display: none;
+}
