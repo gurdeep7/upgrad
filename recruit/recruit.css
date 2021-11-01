@@ -39,7 +39,7 @@
 .more_options {
   display: flex;
   gap: 1.3vw;
-  height: 8.7vh;
+  height: 7.2vh;
   background-color: #f4f6f6;
   justify-content: center;
   align-items: center;
@@ -48,13 +48,12 @@
   font-size: 0.8669rem;
   font-family: Arial;
   font-weight: 400;
-  height: 2.25 rem;
   width: 8.75 rem;
   padding: 0.7%;
   border-right: 1px solid #cecece;
 }
 .banner_Image {
-  height: 95vh;
+  height: 75vh;
   background-image: linear-gradient(to right bottom, #000000dc, #000000c7),
     url(./Banner-Image.png);
   background-position: center;
@@ -85,4 +84,17 @@
   line-height: 1em;
   font-size: 1.5rem;
   font-weight: 600;
+}
+.border_box {
+  border: 1px solid red;
+  line-height: 1.7rem;
+  font-size: 15px;
+  padding: 2% 1%;
+}
+.mini_container {
+  display: flex;
+}
+.border_box > p {
+  font-size: 1.5rem;
+  margin-bottom: 3%;
 }
