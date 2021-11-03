@@ -4,12 +4,28 @@
     position: relative;
     margin: 5px;
 }
-/* .dropdown-content{
+.dropdown-content{
     display: none;
-    min-width: 200px;
+    min-width: 208px;
   position: absolute;
   z-index: 1;
-} */
+}
 .dropdown:hover .dropdown-content{
-  display: none;
+  display: block;
+}
+
+.sidedropdown{
+  
+  margin-left: 240px;
+  height: 600px;
+  top: 0px;
+  min-width: 350px;
+  overflow: auto;
+  
+}
+ .dropdown-content:hover .sidedropdown{
+   display: block;
+ }
+.dropdown-content > div{
+  border-bottom: 2px solid rgba(112, 108, 108, 0.39) !important;
 }

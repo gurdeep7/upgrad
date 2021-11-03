@@ -12,17 +12,30 @@
 <body class="font-sans">
 <!-- navbar -->
 <div class="flex bg-green-200 mt-5 h-10">
-<img class="w-24 h-12 md:ml-56" src="../images/logo.jpg"/>
-<div class="dropdown">
-<button class="bg-gs-red text-white hover:bg-white  hover:text-gs-red mb-2 border-gs-red border-2 w-28 rounded h-8 gs-courses dropbtn">COURSES</button>
-<div class="dropdown-content">
-    <div class="to-black bg-gray-50 hover:bg-gray-300 px-10 py-3 ">MBA & DBA(10)</div>
-    <div class="to-black bg-gray-50 hover:bg-gray-300 px-10 py-3 ">Data Science(7)</div>
-    </div>
-</div>
+<img class="w-24 h-12 md:ml-52" src="../images/logo.jpg"/>
+<div class="dropdown ml-4 cursor-pointer">
+<button class="bg-gs-red text-white hover:bg-white  hover:text-gs-red border-gs-red border-2 w-28 rounded h-8 gs-courses dropbtn">COURSES</button>
+<div class="dropdown-content bg-white shadow-md">
+    <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`Management`)">MBA & DBA(10) <span class="float-right text-2xl block -mt-1.5 ">></span></div>
+    <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red"onmouseenter="showcourse(`DataScience`)">Data Science(7)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
+    <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`MachineLearning`)">Machine Learning(6)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
+    <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`BusinessAnalytics`)">Business Analitics(7)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
+    <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red">Marketing(3)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
+    <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red">Management(15)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
+    <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red">Software(13)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
+    <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red">Block Chain(3)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
+    
+    
+    <div class="sidedropdown hidden absolute bg-white shadow-md" id="sidedropdown">
 
+    </div>
+    </div>
+    
 </div>
 </div>
+<img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/3__1635261036491.jpg" class="w-full"/>
 
 </body>
 </html>
+<script src="../scripts/index.js">
+</script>
