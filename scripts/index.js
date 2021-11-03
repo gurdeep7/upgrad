@@ -198,6 +198,16 @@ const courses=[{
     link : "#",
     offer:"",
 },
+{
+    title : "Business Analytics Certification",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    logo: "../images/logo.jpg",
+    university: "UpGrad",
+    category: "BusinessAnalytics",
+    Duration: 3,
+    link : "#",
+    offer:"",
+},
 ]
 var sidedropdown = document.getElementById("sidedropdown")
 function showcourse(value){
@@ -241,7 +251,6 @@ function showondrop(data){
         }else if(offer == ""){
             off.style.backgroundColor = "transparent";
         }
-        
         else{
             off.style.backgroundColor = "yellow";
             off.style.color= "red"
