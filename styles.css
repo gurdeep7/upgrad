@@ -11,6 +11,10 @@
     @apply rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700;
 }
 
+.btn-red {
+  @apply rounded-lg shadow-md text-white bg-red-500 hover:bg-red-700;
+}
+
 .dropdown {
     float: left;
     overflow: hidden;
