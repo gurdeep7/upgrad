@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/index.css">
     <link rel="stylesheet" href="../style/tailwind.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     
     <title>Document</title>
 </head>
 <body class="font-sans">
 <!-- navbar -->
-<div class="flex bg-green-200 mt-5 h-10 lg:w-9/12 m-auto">
+<div class="flex bg-green-200 mt-5 h-10 lg:w-9/12 m-auto z-10">
 <img class="w-24 h-12 m-auto sm:m-0" src="../images/logo.jpg"/>
-<div class="dropdown ml-4 cursor-pointer hidden sm:block">
+<div class="dropdown ml-4 cursor-pointer hidden z-10 sm:block">
 <button class="bg-gs-red text-white hover:bg-white  hover:text-gs-red border-gs-red border-2 w-28 rounded h-8 gs-courses dropbtn">COURSES</button>
 <div class="dropdown-content bg-white shadow-md">
     <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`Management`)">MBA & DBA(10) <span class="float-right text-2xl block -mt-1.5 ">></span></div>
@@ -32,9 +33,43 @@
     
 </div>
 </div>
-<img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/3__1635261036491.jpg" class="w-full"/>
-
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide ">
+        <img
+          class="object-fill w-full p-2 h-96"
+          src="../images/slideshow1.jpg"
+          alt="image"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          class="object-fill w-full h-96"
+          src="../images/slideshow2.jpg"
+          alt="image"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          class="object-fill w-full h-96"
+          src="../images/slideshow3.jpg"
+          alt="image"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          class="object-fill w-full h-96"
+          src="../images/slideshow4.jpg"
+          alt="image"
+        />
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
 </body>
 </html>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="../scripts/index.js">
 </script>

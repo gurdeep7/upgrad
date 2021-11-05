@@ -261,12 +261,52 @@ const courses=[{
 {
     title : "Master in Computer Science",
     image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
-    logo: "../images/liverlogo.jpg",
-    university: "University of Essex Online",
+    logo: "../images/liverjohn.png",
+    university: "Liverpool John Mores",
     category: "Software",
-    Duration: 18,
+    Duration: 19,
     link : "#",
     offer:"",
+},
+{
+    title : "PG Certification in Software Engineering",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    logo: "../images/logo.jpg",
+    university: "UpGrad",
+    category: "Software",
+    Duration: 5,
+    link : "#",
+    offer:"JOB GUARENTEED",
+},
+{
+    title : "Executive PG in Software Development Spl. in Full Stack Development",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    logo: "../images/iitb_logo.png",
+    university: "IIT Bangalore",
+    category: "Software",
+    Duration: 13,
+    link : "#",
+    offer:"Trending",
+},
+{
+    title : "Executive PG in Software Development Spl. in Full Stack Development",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    logo: "../images/iitb_logo.png",
+    university: "IIT Bangalore",
+    category: "Software",
+    Duration: 13,
+    link : "#",
+    offer:"Trending",
+},
+{
+    title : "Executive PG in Software Development Spl. in Cyber Security",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    logo: "../images/iitb_logo.png",
+    university: "IIT Bangalore",
+    category: "Software",
+    Duration: 13,
+    link : "#",
+    offer:"Trending",
 },
 ]
 var sidedropdown = document.getElementById("sidedropdown")
@@ -328,3 +368,18 @@ function showondrop(data){
     });
 
 }
+
+// slideshow start
+var swiper = new Swiper(".mySwiper", {
+    cssMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
+// Slideshow Stop
