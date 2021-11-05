@@ -296,7 +296,7 @@ const courses=[{
     category: "Software",
     Duration: 13,
     link : "#",
-    offer:"Trending",
+    offer:"",
 },
 {
     title : "Executive PG in Software Development Spl. in Cyber Security",
@@ -304,9 +304,90 @@ const courses=[{
     logo: "../images/iitb_logo.png",
     university: "IIT Bangalore",
     category: "Software",
-    Duration: 13,
+    Duration: 7.5,
     link : "#",
-    offer:"Trending",
+    offer:"",
+},
+
+{
+    title : "Advance Ceritificate in Software Development Spl. in Cloud Computing",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    logo: "../images/iitb_logo.png",
+    university: "IIT Bangalore",
+    category: "Software",
+    Duration: 7.5,
+    link : "#",
+    offer:"",
+},
+{
+    title : "Advance Ceritificate in Software Development Spl. in Big Data",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    logo: "../images/iitb_logo.png",
+    university: "IIT Bangalore",
+    category: "Software",
+    Duration: 7.5,
+    link : "#",
+    offer:"",
+},
+{
+    title : "Advance Ceritificate in Software Development Spl. in DevOps",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    logo: "../images/iitb_logo.png",
+    university: "IIT Bangalore",
+    category: "Software",
+    Duration: 7.5,
+    link : "#",
+    offer:"",
+},
+{
+    title : "PG Course in Computer Science",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    logo: "../images/essex_logo.png",
+    university: "University of Essex Online",
+    category: "Software",
+    Duration: 12,
+    link : "#",
+    offer:"",
+},
+{
+    title : "PG Course in Cyber Security",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    logo: "../images/essex_logo.png",
+    university: "University of Essex Online",
+    category: "Software",
+    Duration: 12,
+    link : "#",
+    offer:"",
+},
+{
+    title : "Master in Computer Science",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    logo: "../images/liverjohn.png",
+    university: "Liverpool John Mores University",
+    category: "Blockchain",
+    Duration: 19,
+    link : "#",
+    offer:"",
+},
+{
+    title : "Advanced Certificate in block Chain",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    logo: "../images/iitb_logo.png",
+    university: "IIT Bangalore",
+    category: "Blockchain",
+    Duration: 7.5,
+    link : "#",
+    offer:"",
+},
+{
+    title : "Executive PGP in Software Development Spl. in Block Chain",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    logo: "../images/iitb_logo.png",
+    university: "IIT Bangalore",
+    category: "Blockchain",
+    Duration: 7.5,
+    link : "#",
+    offer:"",
 },
 ]
 var sidedropdown = document.getElementById("sidedropdown")
@@ -324,7 +405,7 @@ function showondrop(data){
         div.onclick = ()=>{
             window.location.href = link;
         }
-        div.setAttribute("class","border-black border-2 rounded flex hover:border-gs-red hover:bg-gray-100 ")
+        div.setAttribute("class","border-black border-2 rounded-lg flex hover:border-gs-red hover:bg-gray-100 ")
         let img = document.createElement("img")
         img.src = logo;
         img.style.width = "20%"

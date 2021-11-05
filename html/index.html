@@ -12,7 +12,7 @@
 </head>
 <body class="font-sans">
 <!-- navbar -->
-<div class="flex bg-green-200 mt-5 h-10 lg:w-9/12 m-auto z-10">
+<div class="flex relative mt-5 h-10 lg:w-9/12 m-auto z-10">
 <img class="w-24 h-12 m-auto sm:m-0" src="../images/logo.jpg"/>
 <div class="dropdown ml-4 cursor-pointer hidden z-10 sm:block">
 <button class="bg-gs-red text-white hover:bg-white  hover:text-gs-red border-gs-red border-2 w-28 rounded h-8 gs-courses dropbtn">COURSES</button>
@@ -23,17 +23,34 @@
     <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`BusinessAnalytics`)">Business Analitics(5)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
     <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`Marketing`)">Marketing(3)<span class="float-right text-2xl block -mt-1.5 ">></span></div>    
     <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`Software`)">Software(13)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
-    <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red">Block Chain(3)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
-    
-    
+    <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`Blockchain`)">Block Chain(3)<span class="float-right text-2xl block -mt-1.5 ">></span></div> 
     <div class="sidedropdown hidden absolute bg-white shadow-md" id="sidedropdown">
 
     </div>
     </div>
     
 </div>
+<div class="hidden lg:absolute mt-3 float-right sm:flex lg:right-32">
+    <div class="text-gray-600 m-2 cursor-pointer font-bold text-sm hover:text-gs-red" onclick="location.href='#'">HIRE FROM UPGRAD</div>
+    <div class="text-gray-600 m-2 cursor-pointer font-bold text-sm hover:text-gs-red" onclick="location.href='#'">HIRE FROM UPGRAD</div>
+    <div class="text-gray-600 m-2 cursor-pointer font-bold text-sm hover:text-gs-red" onclick="location.href='#'">HIRE FROM UPGRAD</div>
+    <div class="dropdown-more text-gray-600 m-2 cursor-pointer font-bold text-sm hover:text-gs-red" onclick="location.href='#'">MORE
+    <div class="moreshow bg-white rounded absolute hidden shadow-lg">
+        <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Mentorships</div>
+        <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Short Videos</div>
+        <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Master Class</div>
+        <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Refer and Earn</div>
+        <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Blog</div>
+        <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Become A Business Associate</div>
+        <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">UpGrad Events</div>
+    </div>
+    </div>
 </div>
-<div class="swiper mySwiper">
+<div>
+    <button class="p-2 rounded text-white absolute right-1 shadow-md bg-gradient-to-r from-red-700 to-red-300 hover:shadow-2xl">Sign Up</button>
+</div>
+</div>
+<div class="swiper mySwiper mt-3">
     <div class="swiper-wrapper">
       <div class="swiper-slide ">
         <img
@@ -68,6 +85,47 @@
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
   </div>
+  <div class="grid grid-rows-4 md:grid-rows-1 sm:grid-rows-2 grid-flow-col gap-4 w-9/12 m-auto mt-3">
+    <div>
+        <div class="inline-block">
+            <img class="w-20" src="../images/gs_top.png">
+        </div>
+        <div class="inline-block align-top">
+            <p class="text-3xl">Top 1%</p>
+            <p class="text-2xl">Global Universities</p>
+        </div>
+    </div>
+    <div>
+        <div class="inline-block">
+            <img class="w-20" src="../images/gs_session.png">
+        </div>
+        <div class="inline-block align-top">
+            <p class="text-3xl">1:1 Sessions</p>
+            <p class="text-2xl">With Experts</p>
+        </div>
+    </div>
+    <div>
+        <div class="inline-block">
+            <img class="w-20" src="../images/gs_jobs.png">
+        </div>
+        <div class="align-top inline-block">
+            <p class="text-3xl">Job in 1000+</p>
+            <p class="text-2xl">Top Companies</p>
+        </div>
+    </div>
+    <div>
+        <div class="inline-block">
+            <img class="w-20" src="../images/gs_avghikes.png">
+        </div>
+        <div class="inline-block align-top">
+            <p class="text-3xl">50%</p>
+            <p class="text-2xl">Average Hikes</p>
+        </div>
+    </div>
+</div>
+<div class="m-auto w-min">
+<button class="bg-gs-red w-80 h-12 text-2xl text-white rounded m-auto mt-4">Explore Our Courses</button>
+</div>
 </body>
 </html>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
