@@ -155,7 +155,7 @@
 .callBack__form {
   background-color: #f2f5f6;
   border-radius: 15px;
-  width: 30vw;
+  width: 25vw;
 }
 .callBack__f {
   text-align: center;
@@ -190,3 +190,88 @@ input {
 #submit:hover {
   background-color: #ee2c3c;
 }
+.bg_hire {
+  height: 55vh;
+  background-image: linear-gradient(to right bottom, #000000dc, #000000c7),
+    url(./bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.mini_bg_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5.3vw;
+  font-size: 1.5rem;
+}
+.t_center {
+  text-align: center;
+  padding-top: 5%;
+}
+.t_center {
+  font-size: 2.5rem;
+  padding-bottom: 3%;
+}
+ul {
+  list-style: none;
+}
+
+ul li:before {
+  content: "✓ ";
+}
+.btn {
+  font-weight: 600;
+  font-size: 19px;
+  border-radius: 5px;
+  margin-top: 2%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  border: 0px;
+  text-align: center;
+  background-color: #ee2c3c;
+  color: white;
+  padding: 1% 5% 1% 5%;
+}
+.btn:hover {
+  background-color: #db1a29;
+}
+/* Placement Highlights */
+.placement__highlights {
+  height: 40vh;
+  margin-top: 2%;
+  text-align: center;
+}
+.fw-7 {
+  font-size: 12px;
+  font-weight: 800;
+}
+.placement__highlights__list {
+  display: flex;
+  margin-top: 23px;
+  justify-content: center;
+  gap: 3%;
+}
+.placement__highlights__list__buttons > button {
+  font-size: larger;
+  font-weight: 500;
+  margin-top: 2%;
+  background-color: red;
+  color: white;
+  padding: 1% 5%;
+  border-radius: 5px;
+  border: 2px solid #ee2c3c;
+  margin-left: 5%;
+}
+.invert_col {
+  background-color: white !important;
+  color: #ff0000 !important;
+}
+.invert_col:hover {
+  background-color: #000000 !important;
+  color: white !important;
+}
+.dark:hover {
+  background-color: #db1a29;
+}
+/* Our Learner Profiles starts */
