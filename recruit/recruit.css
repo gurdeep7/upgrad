@@ -275,3 +275,64 @@ ul li:before {
   background-color: #db1a29;
 }
 /* Our Learner Profiles starts */
+.our__learners {
+  height: 85vh;
+  background-color: #f4f6f6;
+}
+.our__learners h1 {
+  padding: 3% 0% 3% 0%;
+  text-align: center;
+}
+.our_learners_profile {
+  display: flex;
+  gap: 3%;
+  justify-content: center;
+}
+.imges > img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border: 1px solid #000000;
+}
+.data {
+  background-color: #db1a29;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px;
+  bottom: 8px;
+  right: 16px;
+}
+.center {
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.fotter {
+  display: flex;
+  height: 30vh;
+  background-color: black;
+  justify-content: space-between;
+}
+.fotter__left > img {
+  width: 200px;
+  margin-top: 23px;
+  margin-left: 25px;
+}
+.socail {
+  display: flex;
+}
+.socail > img {
+  height: 45px;
+}
+.fotter__right {
+  margin-top: 23px;
+  width: 23vw;
+  display: flex;
+  gap: 2%;
+}
+.fotter__right a {
+  text-decoration: none;
+  color: white;
+  line-height: 1.4rem;
+}
