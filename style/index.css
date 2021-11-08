@@ -1,4 +1,6 @@
-
+html{
+  scroll-behavior: smooth;
+}
 
 .dropdown {
     position: relative;
@@ -43,5 +45,6 @@
   min-width: 200px;
   display: block;
 }
+
 
 

@@ -10,7 +10,7 @@ const courses=[{
 },
 {
     title : "MBA (Global)",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/deakin__1619433034686.png",
     logo: "../images/deakinlogo.png",
     university: "Deakin Business School",
     category: "Management",
@@ -20,7 +20,7 @@ const courses=[{
 },
 {
     title : "MBA (Global)- Specalisations",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/LJMU__1619434548536.png",
     logo: "../images/liverlogo.jpg",
     university: "Liverpool Business School",
     category: "Management",
@@ -40,7 +40,7 @@ const courses=[{
 },
 {
     title : "Post Graduate Diploma in Management",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/Bimtech__1619593037247.png",
     logo: "../images/birlalogo.png",
     university: "Birla institute of Management",
     category: "Management",
@@ -49,8 +49,18 @@ const courses=[{
     offer: "New"
 },
 {
+    title : "MBA (Executive) with Specialisation in Business Analytics",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/nmims__1619435204977.png",
+    logo: "../images/nmims_logo.png",
+    university: "NMIMS",
+    category: "Management",
+    Duration: 18,
+    link : "#",
+    offer: "New"
+},
+{
     title : "Master of Science in Data Science",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/UoA__1627633589303.png",
     logo: "../images/arizonalogo.png",
     university: "University of Arizona",
     category: "DataScience",
@@ -60,7 +70,7 @@ const courses=[{
 },
 {
     title : "Executive PG Program in Data Science",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620048290508.png",
     logo: "../images/iitb_logo.png",
     university: "IIT bangalore",
     category: "DataScience",
@@ -70,7 +80,7 @@ const courses=[{
 },
 {
     title : "Master of Science in Data Science",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620910521049.png",
     logo: "../images/iitb_logo.png",
     university: "Liverpool john University",
     category: "DataScience",
@@ -80,7 +90,7 @@ const courses=[{
 },
 {
     title : "Professional Certificate in Data Science",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/IIMK__1619530908960.png",
     logo: "../images/iim_kozhikode.png",
     university: "IIM KOZHIKODE",
     category: "DataScience",
@@ -90,7 +100,7 @@ const courses=[{
 },
 {
     title : "Advanced Certificate Programme in Data Science",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620909302628.png",
     logo: "../images/iitb_logo.png",
     university: "IIT bangalore",
     category: "DataScience",
@@ -100,7 +110,7 @@ const courses=[{
 },
 {
     title : "Advanced Programme in Data Science",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620910521049.png",
     logo: "../images/iitb_logo.png",
     university: "IIT bangalore",
     category: "DataScience",
@@ -110,7 +120,7 @@ const courses=[{
 },
 {
     title : "Python Programming Boot Camp",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/program_card_bootcamp__1633678556493.jpg",
     logo: "../images/logo.jpg",
     university: "UpGrad",
     category: "DataScience",
@@ -449,7 +459,49 @@ function showondrop(data){
     });
 
 }
+//Display in Grid
+function showgrid(value){
+    
+    let data = courses.filter(el => el.category == value)
+    showongrid(data)
+    
+}
+showgrid("Management");
+function showongrid(data){
+    grid = document.getElementById("explore_courses")
+    grid.innerHTML = null;
+    data.forEach(({title,logo,Duration,university,link,offer,image}) => {
+        let div = document.createElement("div")
+        div.onclick = ()=>{
+            window.location.href = link;
+        }
+        div.setAttribute("class","border-2 border-gray-300 cursor-pointer shadow-xl rounded-2xl m-3")
+         let img = document.createElement("img")
+         img.src = image;
+         img.setAttribute("class","w-full rounded-t-2xl")
+         let univerity1 = document.createElement("p")
+         univerity1.textContent = university;
+         univerity1.setAttribute("class","inline-block w-7/12 h-12 border-l-2 align-top m-2 border-gray-600")
+         let logo1 = document.createElement("img")
+         logo1.src = logo;
+         logo1.setAttribute("class","inline-block m-2 w-3/12 h-12")
+         let title1 = document.createElement("p")
+         title1.setAttribute("class","w-11/12 text-xl border-gray-600 font-bold ml-3 border-b-2")
+         title1.textContent = title;
+         let duration = document.createElement("div")
+         duration.setAttribute("class","w-auto ml-3 p-2 text-gray-600")
+         duration.innerHTML = `<span class="material-icons block align-bottom">menu_book</span> ${Duration} Months `
+         let mentorship = document.createElement("div")
+         mentorship.setAttribute("class","w-auto ml-3 -mt-3 p-2 text-gray-600")
+         mentorship.innerHTML = `<span class="material-icons block align-bottom">supervisor_account</span> 1-1 Mentorship & Job Support`
+         let button = document.createElement("div")
+         button.setAttribute("class","w-10/12 m-auto text-center mb-2 text-gs-red border-2 p-1")
+         button.innerHTML = `VIEW PROGRAM &#10132;`
+         div.append(img,logo1,univerity1,title1,duration,mentorship,button)
+         grid.append(div)
 
+    });
+}
 // slideshow start
 var swiper = new Swiper(".mySwiper", {
     cssMode: true,

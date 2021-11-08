@@ -1,5 +1,3 @@
 node_modules
-tailwind.config.js
 package.json
-package-lock.
-html/test.html
+package-lock.json
