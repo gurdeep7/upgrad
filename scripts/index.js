@@ -130,7 +130,7 @@ const courses=[{
 },
 {
     title : "Executive PG Programme in Machine Learning & AI",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620048320113.png",
     logo: "../images/iitb_logo.png",
     university: "IIT Bangalore",
     category: "MachineLearning",
@@ -140,7 +140,7 @@ const courses=[{
 },
 {
     title : "Master of Learning in Machine Learning & AI",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620048233890.png",
     logo: "../images/iitb_logo.png",
     university: "IIT Bangalore",
     category: "MachineLearning",
@@ -150,7 +150,7 @@ const courses=[{
 },
 {
     title : "Master of Learning in Machine Learning & AI",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/IITMadras__1619530797767.png",
     logo: "../images/iitm_logo.png",
     university: "IIT Madras",
     category: "MachineLearning",
@@ -160,7 +160,7 @@ const courses=[{
 },
 {
     title : "ADvance certificate in Machine Learning & AI",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/IITMadras__1619530797767.png",
     logo: "../images/iitm_logo.png",
     university: "IIT Madras",
     category: "MachineLearning",
@@ -170,7 +170,7 @@ const courses=[{
 },
 {
     title : "Advanced Certificate in Machine Learning & Deep Learning",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620048290508.png",
     logo: "../images/iitb_logo.png",
     university: "IIT Bangalore",
     category: "MachineLearning",
@@ -180,7 +180,7 @@ const courses=[{
 },
 {
     title : "Advanced Certificate in Machine Learning & Deep Learning",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620911270057.png",
     logo: "../images/iitb_logo.png",
     university: "IIT Bangalore",
     category: "MachineLearning",
