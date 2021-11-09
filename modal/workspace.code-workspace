@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\classtailwind"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "modal"
+	}
+}
