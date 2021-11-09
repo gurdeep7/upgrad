@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/tailwind.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body class="font-sans">
+<!-- navbar -->
+<div class="flex relative mt-5 h-10 lg:w-9/12 m-auto z-10">
+<img class="w-24 h-12 m-auto sm:m-0" src="../images/logo.jpg"/>
+<div class="dropdown ml-4 cursor-pointer hidden z-10 sm:block">
+<button class="bg-gs-red text-white hover:bg-white  hover:text-gs-red border-gs-red border-2 w-28 rounded h-8 gs-courses dropbtn">COURSES</button>
+<div class="dropdown-content bg-white shadow-md">
+    <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`Management`)">MBA & DBA(10) <span class="float-right text-2xl block -mt-1.5 ">></span></div>
+    <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red"onmouseenter="showcourse(`DataScience`)">Data Science(7)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
+    <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`MachineLearning`)">Machine Learning(6)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
+    <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`BusinessAnalytics`)">Business Analitics(5)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
+    <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`Marketing`)">Marketing(3)<span class="float-right text-2xl block -mt-1.5 ">></span></div>    
+    <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`Software`)">Software(13)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
+    <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`Blockchain`)">Block Chain(3)<span class="float-right text-2xl block -mt-1.5 ">></span></div> 
+    <div class="sidedropdown hidden absolute bg-white shadow-2xl" id="sidedropdown">
+
+    </div>
+    </div>
+    
+</div>
+<div class="hidden lg:absolute mt-3 float-right sm:flex lg:right-32">
+    
+  
+    <div class="text-gray-600 m-2  lg:ml-7 cursor-pointer font-bold text-sm hover:text-gs-red" onclick="location.href='#'">HIRE FROM UPGRAD</div>
+    <div class="text-gray-600 m-2 lg:ml-7 cursor-pointer font-bold text-sm hover:text-gs-red" onclick="location.href='#'">STUDY ABROAD</div>
+    <div class="text-gray-600 m-2 lg:ml-7 cursor-pointer font-bold text-sm hover:text-gs-red" onclick="location.href='#'">FOR BUSINESS</div>
+    <div class="dropdown-more text-gray-600 m-2 lg:ml-7 cursor-pointer font-bold text-sm hover:text-gs-red" onclick="location.href='#'">MORE
+    <div class="moreshow bg-white rounded absolute hidden shadow-lg">
+        <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Mentorships</div>
+        <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Short Videos</div>
+        <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Master Class</div>
+        <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Refer and Earn</div>
+        <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Blog</div>
+        <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Become A Business Associate</div>
+        <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">UpGrad Events</div>
+    </div>
+    </div>
+</div>
+<div>
+    <button class="p-2 rounded text-white absolute right-1 shadow-md bg-gradient-to-r from-red-700 to-red-300 hover:shadow-2xl">Sign Up</button>
+</div>
+</div>
+<!-- navbar end -->
+<div class="swiper mySwiper mt-3">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide ">
+        <img
+          class="object-fill w-full p-2 h-96"
+          src="../images/slideshow1.jpg"
+          alt="image"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          class="object-fill w-full h-96"
+          src="../images/slideshow2.jpg"
+          alt="image"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          class="object-fill w-full h-96"
+          src="../images/slideshow3.jpg"
+          alt="image"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          class="object-fill w-full h-96"
+          src="../images/slideshow4.jpg"
+          alt="image"
+        />
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="grid grid-rows-2 lg:grid-rows-1  grid-flow-col gap-4 w-9/12 m-auto mt-3">
+    <div>
+        <div class="inline-block">
+            <img class="w-20" src="../images/gs_top.png">
+        </div>
+        <div class="inline-block align-top">
+            <p class="text-3xl">Top 1%</p>
+            <p class="text-2xl">Global Universities</p>
+        </div>
+    </div>
+    <div>
+        <div class="inline-block">
+            <img class="w-20" src="../images/gs_session.png">
+        </div>
+        <div class="inline-block align-top">
+            <p class="text-3xl">1:1 Sessions</p>
+            <p class="text-2xl">With Experts</p>
+        </div>
+    </div>
+    <div>
+        <div class="inline-block">
+            <img class="w-20" src="../images/gs_jobs.png">
+        </div>
+        <div class="align-top inline-block">
+            <p class="text-3xl">Job in 1000+</p>
+            <p class="text-2xl">Top Companies</p>
+        </div>
+    </div>
+    <div>
+        <div class="inline-block">
+            <img class="w-20" src="../images/gs_avghikes.png">
+        </div>
+        <div class="inline-block align-top">
+            <p class="text-3xl">50%</p>
+            <p class="text-2xl">Average Hikes</p>
+        </div>
+    </div>
+</div>
+<div class="m-auto w-min">
+<button class="bg-gs-red w-80 h-12 text-xl font-semibold text-white rounded m-auto mt-4 shadow-2xl" onclick="location.href='#explore'">EXPLORE OUR COURSES</button>
+</div>
+<p class="text-center mt-8 text-4xl font-semibold">Our Top University Partners</p>
+<div class="grid grid-cols-2 lg:grid-cols-4 grid-flow-row lg:w-9/12 lg:m-auto" >
+  <img class="h-12 m-auto" src="../images/arizonalogo.png">
+  <img class="h-16 m-auto" src="../images/deakinlogo.png">
+  <img src="../images/iitm_logo2.jpg">
+  <img src="../images/iim_kozhi2.jpg">
+  <img class="h-16 m-auto" src="../images/iitb_logo.png">
+  <img class="h-16 m-auto" src="../images/MICA_Logo.png">
+  <img src="../images/dukelogo.jpg">
+  <img src="../images/nmimslogo.jpg">
+
+</div>
+<div id="explore" class="text-center mt-8 text-4xl font-bold">Explore Our Courses</div>
+<div class="w-full lg:w-9/12 m-auto">
+  <div class="w-1/4 inline-block align-top sticky top-2 shadow-2xl text-gray-600 font-semibold">
+    <button class="hover:bg-gs-red w-full m-1 focus:bg-gs-red focus:text-white p-2 rounded text-left hover:text-white" onclick="showgrid('Management')">MBA & DBA(10)<span class="float-right text-2xl block -mt-1.5 ">></span></button>
+    <button class="hover:bg-gs-red w-full m-1 focus:bg-gs-red focus:text-white p-2 rounded text-left hover:text-white" onclick="showgrid('DataScience')">Data Science(7)<span class="float-right text-2xl block -mt-1.5 ">></span></button>
+    <button class="hover:bg-gs-red w-full m-1 focus:bg-gs-red focus:text-white p-2 rounded text-left hover:text-white" onclick="showgrid('MachineLearning')">Machine Learning(6)<span class="float-right text-2xl block -mt-1.5 ">></span></button>
+    <button class="hover:bg-gs-red w-full m-1 focus:bg-gs-red focus:text-white p-2 rounded text-left hover:text-white">Business Analitics(5)<span class="float-right text-2xl block -mt-1.5 ">></span></button>
+    <button class="hover:bg-gs-red w-full m-1 focus:bg-gs-red focus:text-white p-2 rounded text-left hover:text-white">Marketing(3)<span class="float-right text-2xl block -mt-1.5 ">></span></button>
+    <button class="hover:bg-gs-red w-full m-1 focus:bg-gs-red focus:text-white p-2 rounded text-left hover:text-white">Software(13)<span class="float-right text-2xl block -mt-1.5 ">></span></button>
+    <button class="hover:bg-gs-red w-full m-1 focus:bg-gs-red focus:text-white p-2 rounded text-left hover:text-white">Block Chain(3)<span class="float-right text-2xl block -mt-1.5 ">></span></button>
+  </div>
+  <div class="inline-grid grid-cols-1 w-8/12 md:grid-cols-2 grid-flow-row" id="explore_courses"></div>
+</div>
+<div class="w-auto align-text-top"></div>
+</body>
+</html>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="../scripts/index.js">
+</script>
