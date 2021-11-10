@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build":"tailwindcss -i src/styles.css -o public/output.css -w"
+    "build": "tailwindcss -i src/styles.css -o public/output.css -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "tailwind-scrollbar-hide": "^1.1.5",
     "tailwindcss": "^2.2.19"
   }
 }
