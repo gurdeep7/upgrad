@@ -190,7 +190,7 @@ const courses=[{
 },
 {
     title : "Executive PG Program in Business Analytics",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620909518637.png",
     logo: "../images/LIBA-logo.jpg",
     university: "Loyola Institute of Business",
     category: "BusinessAnalytics",
@@ -200,7 +200,7 @@ const courses=[{
 },
 {
     title : "Global Master Certificate in Business Analytics",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/MSU__1619592931800.png",
     logo: "../images/michigan_logo.png",
     university: "Michigan State University",
     category: "BusinessAnalytics",
@@ -210,7 +210,7 @@ const courses=[{
 },
 {
     title : "Business Analytics Certification",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/BusinessACProgramCard__1621511225625.png",
     logo: "../images/logo.jpg",
     university: "UpGrad",
     category: "BusinessAnalytics",
@@ -220,7 +220,7 @@ const courses=[{
 },
 {
     title : "Certificate Program in Business Analytics",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/iit_bombay_programcard__1612867070163.png",
     logo: "../images/iitb_logo.png",
     university: "IIT Bombay",
     category: "BusinessAnalytics",
@@ -230,7 +230,7 @@ const courses=[{
 },
 {
     title : "PG Course in Business Analytics",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/business_analytics_essex__1629268471689.png",
     logo: "../images/essex_logo.png",
     university: "University of Essex Online",
     category: "BusinessAnalytics",
@@ -240,7 +240,7 @@ const courses=[{
 },
 {
     title : "Advanced Certificate in Digital MArketing and Communication",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620048408643.png",
     logo: "../images/MICA_logo.png",
     university: "MICA",
     category: "Marketing",
@@ -250,7 +250,7 @@ const courses=[{
 },
 {
     title : "Advanced Certificate in Digital MArketing and Advertising",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/MICA__1619529914249.png",
     logo: "../images/MICA_logo.png",
     university: "MICA",
     category: "Marketing",
@@ -260,7 +260,7 @@ const courses=[{
 },
 {
     title : "PG Course in Digital Marketing",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/m__1600086198878.png",
     logo: "../images/essex_logo.png",
     university: "University of Essex Online",
     category: "Marketing",
@@ -270,7 +270,7 @@ const courses=[{
 },
 {
     title : "Master in Computer Science",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/LJMU__1619593688050.png",
     logo: "../images/liverjohn.png",
     university: "Liverpool John Mores",
     category: "Software",
@@ -280,7 +280,7 @@ const courses=[{
 },
 {
     title : "PG Certification in Software Engineering",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620048832078.png",
     logo: "../images/logo.jpg",
     university: "UpGrad",
     category: "Software",
@@ -290,7 +290,7 @@ const courses=[{
 },
 {
     title : "Executive PG in Software Development Spl. in Full Stack Development",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/IIITB__1619592040477.png",
     logo: "../images/iitb_logo.png",
     university: "IIT Bangalore",
     category: "Software",
@@ -300,7 +300,7 @@ const courses=[{
 },
 {
     title : "Executive PG in Software Development Spl. in Full Stack Development",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/IIITB__1619592040477.png",
     logo: "../images/iitb_logo.png",
     university: "IIT Bangalore",
     category: "Software",
@@ -310,7 +310,7 @@ const courses=[{
 },
 {
     title : "Executive PG in Software Development Spl. in Cyber Security",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620048887603.png",
     logo: "../images/iitb_logo.png",
     university: "IIT Bangalore",
     category: "Software",
@@ -321,7 +321,7 @@ const courses=[{
 
 {
     title : "Advance Ceritificate in Software Development Spl. in Cloud Computing",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620048958460.png",
     logo: "../images/iitb_logo.png",
     university: "IIT Bangalore",
     category: "Software",
@@ -331,7 +331,7 @@ const courses=[{
 },
 {
     title : "Advance Ceritificate in Software Development Spl. in Big Data",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620049101600.png",
     logo: "../images/iitb_logo.png",
     university: "IIT Bangalore",
     category: "Software",
@@ -341,7 +341,7 @@ const courses=[{
 },
 {
     title : "Advance Ceritificate in Software Development Spl. in DevOps",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620049156261.png",
     logo: "../images/iitb_logo.png",
     university: "IIT Bangalore",
     category: "Software",
@@ -351,7 +351,7 @@ const courses=[{
 },
 {
     title : "PG Course in Computer Science",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/PGC__1600330273798.png",
     logo: "../images/essex_logo.png",
     university: "University of Essex Online",
     category: "Software",
@@ -361,7 +361,7 @@ const courses=[{
 },
 {
     title : "PG Course in Cyber Security",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/pgc_backend__1602136030178.jpg",
     logo: "../images/essex_logo.png",
     university: "University of Essex Online",
     category: "Software",
@@ -371,7 +371,7 @@ const courses=[{
 },
 {
     title : "Master in Computer Science",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620910521049.png",
     logo: "../images/liverjohn.png",
     university: "Liverpool John Mores University",
     category: "Blockchain",
@@ -381,7 +381,7 @@ const courses=[{
 },
 {
     title : "Advanced Certificate in block Chain",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620048382874.png",
     logo: "../images/iitb_logo.png",
     university: "IIT Bangalore",
     category: "Blockchain",
@@ -391,7 +391,7 @@ const courses=[{
 },
 {
     title : "Executive PGP in Software Development Spl. in Block Chain",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/IIITB__1619592204611.png",
     logo: "../images/iitb_logo.png",
     university: "IIT Bangalore",
     category: "Blockchain",
@@ -478,15 +478,15 @@ function showongrid(data){
         div.setAttribute("class","border-2 border-gray-300 cursor-pointer shadow-xl rounded-2xl m-3")
          let img = document.createElement("img")
          img.src = image;
-         img.setAttribute("class","w-full rounded-t-2xl")
+         img.setAttribute("class","w-full rounded-t-2xl h-32")
          let univerity1 = document.createElement("p")
          univerity1.textContent = university;
-         univerity1.setAttribute("class","inline-block w-7/12 h-12 border-l-2 align-top m-2 border-gray-600")
+         univerity1.setAttribute("class","inline-block w-7/12 h-12 border-l-2  align-top m-2 border-gray-600")
          let logo1 = document.createElement("img")
          logo1.src = logo;
          logo1.setAttribute("class","inline-block m-2 w-3/12 h-12")
          let title1 = document.createElement("p")
-         title1.setAttribute("class","w-11/12 text-xl border-gray-600 font-bold ml-3 border-b-2")
+         title1.setAttribute("class","w-11/12 text-xl border-gray-200 font-bold ml-3 border-b-2")
          title1.textContent = title;
          let duration = document.createElement("div")
          duration.setAttribute("class","w-auto ml-3 p-2 text-gray-600")
