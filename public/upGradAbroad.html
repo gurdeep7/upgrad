@@ -7,6 +7,7 @@
     <title>One-stop Destination for your entire Study Abroad Journey | UpGrad</title>
     <link rel="stylesheet" href="output.css">
     <link rel="SHORTCUT ICON" href="./imgs/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="ICON" href="./imgs/favicon.ico" type="image/ico" />
 </head>
 <body>
@@ -43,9 +44,30 @@
        </nav>
    </header>
 <!-- SLIDER -->
-<div class="slider">
+<!-- <div class="swiper mySwiper ">
     <img class="mt-4 w-full" src="./imgs/webinarhome-banner.jpg" alt="">
-</div>
+</div> -->
+<div class="swiper mySwiper mt-3">
+    <div class="swiper-wrapper ">
+      <div class="swiper-slide">
+        <img
+          class="object-fill w-full h-96"
+          src="./imgs/webinarhome-banner.jpg"
+          alt="image"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          class="object-fill w-full h-96"
+          src="./imgs/global-banner-career.jpg"
+          alt="image"
+        />
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
 <!-- Button -->
 <div class="mt-12 flex justify-center">
     <button type="button" class="btn bg-upgrad-red w-80 text-white py-3 px-12">Talk to our Counselor</button>
@@ -540,3 +562,20 @@
     }
     </script>
 </html>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    // slideshow start
+var swiper = new Swiper(".mySwiper", {
+    cssMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
+// Slideshow Stop
+</script>
