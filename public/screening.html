@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screening</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="SHORTCUT ICON" href="./imgs/favicon.ico" type="image/x-icon" />
+    <link rel="ICON" href="./imgs/favicon.ico" type="image/ico" />
+</head>
+<body>
+    <header>
+        <nav class="flex fixed items-center px-4 box-border border-2 w-full bg-white">
+            <div class="w-28"><img class="cursor-pointer" src="./imgs/logo.png" alt=""></div>
+        <ul class="hidden sm:flex flex-1 justify-end items-center gap-2 text-xl">
+            <div class="rounded-full h-12 w-12 flex items-center justify-center bg-gray-400"><img class="cursor-pointer" src="./imgs/logo.png" alt=""></div>
+            <h6 class="">Username</h6>
+        </ul>   
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <div class="">
+        <h1 class="text-center text-2xl font-bold">Screening Round</h1>
+        <h3 class="text-center text-lg ">Executive PG Programme in Data Science</h3>
+    </div>
+    <div class="mt-4 bg-white  h-full ">
+        <div class="forms flex flex-col pt-4 ml-4 mr-4 px-24 ring-1 ">
+                <label for="name" class="mb-2 text-upgrad-blue text-xl">First Name</label>
+                <input type="text" class="mb-8  py-2 text-xl" name="name" placeholder="Enter Your First Name" id="f_name">
+                <label for="name" class="mb-2 text-upgrad-blue text-xl">Last Name</label>
+                <input type="text" class="mb-8  py-2 text-xl" name="name" placeholder="Enter Your Last Name" id="l_name">
+                <label for="email" class="mb-2 text-upgrad-blue text-xl">Email</label>
+                <input type="text" class="mb-8 py-2 text-xl" placeholder="Enter Your Email" id="email">
+                <label for="mobile" class="mb-2 text-upgrad-blue text-xl">Phone Number</label>
+                <input type="number" class="mb-8  py-2 text-xl" placeholder="Enter Your Mobile" id="mobile">
+                
+               
+                <label for="gender" class="mb-4 text-upgrad-blue text-xl">Gender</label>
+                <div class="flex flex-1 gap-4 border-box mb-8">
+                    <button class="border-box border-4 p-4 text-xl font-bold text-upgrad-blue rounded-2xl">Male</button>
+                    <button class="border-box border-4 p-4 text-xl font-bold text-upgrad-blue rounded-2xl">Female</button>
+                    <button class="border-box border-4 p-4 text-xl font-bold text-upgrad-blue rounded-2xl">I do not wish to specify</button>
+                </div>
+                <label for="city_name" class=" text-upgrad-blue text-xl">City</label>
+                <input type="text" class="mb-8  py-2 text-xl" name="city" placeholder="Enter Your City Name" id="city_name">
+                
+                <label for="education" class="mb-4 text-upgrad-blue text-xl">Have you completed Graduation?</label>
+                <div class="flex flex-1 gap-4 border-box mb-8">
+                    <button class="border-box border-4 p-4 text-xl font-bold text-upgrad-blue rounded-2xl">Yes</button>
+                    <button class="border-box border-4 p-4 text-xl font-bold text-upgrad-blue rounded-2xl">No</button>
+                </div>
+                <label for="referal" class="mb-4 text-upgrad-blue text-xl">Referal Code</label>
+                <input type="text" class="mb-4  py-2 text-xl" placeholder="Enter Referal Code" id="referal">
+        </div>
+            <div class="submit mt-4 px-28 mb-16">
+                <div class="">
+                    <button type="button" class="btn  bg-upgrad-red border-2 border-upgrad-red w-96 h-12 text-white py-1 px-12">Next</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
