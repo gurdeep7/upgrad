@@ -17,16 +17,21 @@
           <div class="home onhover">HOME</div>
           <div class="events onhover">EVENTS</div>
           <div class="placement onhover">PLACEMENT REPORTS</div>
-          <div class="contact onhover">CONTACT US</div>
+          <a class="link" href="#toForm">CONTACT US</a>
+          <!-- <div class="contact onhover">CONTACT US</div> -->
         </div>
       </div>
     </div>
     <div class="more_options">
-      <div class="placement onhover">Placement Highlights</div>
+      <a class="link" href="#place_high">Placement Highlights</a>
+      <!-- <div class="placement onhover">Placement Highlights</div> -->
       <div class="why onhover">Why Hire From Us?</div>
-      <div class="hiring onhover">Hiring Partners</div>
-      <div class="client onhover">Client Testimonials</div>
-      <div class="learn onhover">Learner Profiles</div>
+      <a class="link" href="#Hiring_Partners">Hiring Partners</a>
+      <!-- <div class="hiring onhover">Hiring Partners</div> -->
+      <a class="link" href="#Client_Testimonials">Client Testimonials</a>
+      <!-- <div class="client onhover">Client Testimonials</div> -->
+      <a class="link" href="#Learner_Profiles">Learner Profiles</a>
+      <!-- <div class="learn onhover">Learner Profiles</div> -->
     </div>
     <div class="banner_Image">
       <div class="banner_container con_align">
@@ -43,7 +48,7 @@
                   <tr>
                     <td>
                       🔴 Artificial Intelligence &<br />
-                      Machine Learning
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Machine Learning
                     </td>
                   </tr>
                   <tr>
@@ -94,30 +99,53 @@
       </div>
     </div>
     <!-- request a call back -->
-    <div class="callBack">
+    <div id="toForm" class="callBack">
       <div class="callBack__desc">
         <h1>Hire Right with <n class="red">upGrad</n></h1>
+        <br /><br />
         <p>
           Our dedicated placement team will get in touch with you to discuss
           your requirement and take you through the hiring process, learner
           profiles and timelines
         </p>
+        <br />
+
+        <div class="tabular">
+          <p>🔴 &nbsp;Request for Call Back</p>
+          <p>
+            🔴 &nbsp;Our TeamShare your hiring needs & get a
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dedicated relationship
+            manager
+          </p>
+          <p>🔴 &nbsp;Receive personalised profiles from our experts</p>
+          <p>🔴 &nbsp;Interview candidates & discuss formalities</p>
+        </div>
       </div>
       <div class="callBack__f">
         <div class="callBack__form">
           <div class="callBack__header">Request A Call Back</div>
-          <form action="">
+          <form onsubmit="sendData()">
             <input
               style="margin-top: 5%"
               type="text"
               name=""
               placeholder="Full Name"
-              id=""
+              id="name"
             />
-            <input type="text" name="" placeholder="Your Designation" id="" />
-            <input type="text" name="" placeholder="Company" id="" />
-            <input type="email" name="" placeholder="Officail Email" id="" />
-            <input type="tel" name="" placeholder="Phone Number" id="" />
+            <input
+              type="text"
+              name=""
+              placeholder="Your Designation"
+              id="designation"
+            />
+            <input type="text" name="" placeholder="Company" id="company" />
+            <input
+              type="email"
+              name=""
+              placeholder="Officail Email"
+              id="email"
+            />
+            <input type="tel" name="" placeholder="Phone Number" id="tel" />
             <div class="checkboxes">
               <div>
                 <input
@@ -125,7 +153,6 @@
                   value="Data Science, Big Data, AI / ML, Analytics"
                   id="DataS"
                   name="scales"
-                  checked
                 />
                 <label for="DataS"
                   >Data Science, Big Data, AI / ML, Analytics</label
@@ -152,7 +179,7 @@
               <div>
                 <input
                   type="checkbox"
-                  value="Management - HR, Marketing, Finance, Operations Etc"
+                  value="Management - HR, Marketing,Finance, Operations Etc"
                   id="HR"
                   name="scales"
                 />
@@ -171,10 +198,14 @@
               </div>
             </div>
             <input type="submit" id="submit" value="Request a Call Back" />
+            <br /><br />
           </form>
         </div>
         <p style="font-size: x-small; margin-top: 2%">
-          By submitting your details, you accept our T&Cs and Privacy Policy
+          By submitting your details, you accept our <strong> T&Cs</strong
+          ><br />
+          and
+          <strong> Privacy Policy</strong>
         </p>
       </div>
     </div>
@@ -207,7 +238,7 @@
     </div>
     <!-- Why Hire From Us? end -->
     <!-- Placement Highlights statrs -->
-    <div class="placement__highlights">
+    <div class="placement__highlights" id="place_high">
       <h1><n class="red">Placement</n> Highlights</h1>
       <div class="placement__highlights__list">
         <div>
@@ -241,7 +272,7 @@
       </div>
     </div>
     <!-- Our Learner Profiles: start -->
-    <div class="our__learners">
+    <div id="Learner_Profiles" class="our__learners">
       <h1>Our Learner <n class="red">Profiles</n></h1>
       <div class="our_learners_profile">
         <div class="imges">
@@ -291,9 +322,33 @@
         </div>
       </div>
       <div class="placement__highlights__list__buttons center">
-        <button class="invert_col">View our Learner Profile</button>
-        <button class="dark">HIre From our Talent Pool</button>
+        <button class="invert_col">
+          <!-- its easy to eplicate this in web as it ocmes under gcliud one lcick action but this model need saaome daya na d a machine ch=which is bettern than free versionof monthly subscruption so its piniting tto original link -->
+          <a
+            class="master"
+            href="https://datastudio.google.com/u/0/reporting/16788d6b-889c-4dc5-b933-28757c14b6a7/page/04F3B?s=luoqFZs5Q90"
+            >View our Learner Profile</a
+          >
+        </button>
+        <button class="dark">Hire From our Talent Pool</button>
       </div>
+    </div>
+    <!-- Our Learner Profiles: end -->
+    <!-- Trusted By Leading Recruiters Around The World -->
+    <div id="Hiring_Partners" class="trustLeading">
+      <img src="./comapny.png" alt="" />
+      <br />
+      <a class="link_button" href="#toForm">Join The List</a>
+    </div>
+    <!-- A Word From Our Hiring Partners -->
+    <div
+      id="Client_Testimonials"
+      style="background-color: #f1f2f2"
+      class="trustLeading"
+    >
+      <img src="./hirng_patner.png" alt="" />
+      <br />
+      <a class="link_button" href="#toForm">Request a Call Back</a>
     </div>
     <div class="fotter">
       <div class="fotter__left">
@@ -322,4 +377,5 @@
       </div>
     </div>
   </body>
+  <script src="./recruit.js"></script>
 </html>

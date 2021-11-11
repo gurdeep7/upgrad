@@ -5,6 +5,9 @@
   font-family: "Promixa Nova", -apple-system, BlinkMacSystemFont, Roboto, Arial,
     sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 .con_align {
   width: 75vw;
   margin: auto;
@@ -144,13 +147,13 @@
 .callBack {
   height: 105vh;
   display: flex;
-  flex-template-row: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
   gap: 3.3vw;
 }
 .callBack__desc {
   width: 60vh;
+  padding: 2%;
 }
 .callBack__form {
   background-color: #f2f5f6;
@@ -336,3 +339,42 @@ ul li:before {
   color: white;
   line-height: 1.4rem;
 }
+.master {
+  text-decoration: none;
+  color: red;
+}
+.master:hover {
+  color: white;
+}
+/* smoothh scroll effect applicatiion on page */
+.tabular {
+  margin-top: 5%;
+  line-height: 1.7rem;
+}
+
+.link {
+  text-decoration: none !important;
+  color: black;
+}
+.link:hover {
+  color: #ee2b3b !important;
+}
+/* trust leaidng */
+.trustLeading {
+  height: 100vh;
+  background-color: #ffffff;
+  text-align: center;
+}
+.link_button {
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  background-color: #ee2c3c;
+  color: white;
+  padding: 1% 5%;
+  border-radius: 3px;
+}
+.link_button:hover {
+  background-color: #ff0000;
+}
+/* A Word From Our Hiring Partners */
