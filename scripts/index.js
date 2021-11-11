@@ -617,6 +617,7 @@ function continuebutton(){
                inputmobile.placeholder="Enter your mobile no.";
                let continue_button=document.createElement("button");
                continue_button.innerHTML="Continue";
+               continue_button.disabled = true;
                continue_button.setAttribute("id","continue_button");
                containing.append(div,inputname,inputmobile,continue_button);
                continue_button.onclick=function(){forward();}    
