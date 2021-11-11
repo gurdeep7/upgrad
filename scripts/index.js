@@ -635,7 +635,7 @@ function continuebutton(){
                 let user_datas={
                     email:email_input.value,
                     name: inputname.value,
-                    mobile: inputname.value
+                    mobile: inputmobile.value
                 };
                 localStorage.setItem("User_data",JSON.stringify(user_datas));
                 forward();}    
@@ -684,7 +684,7 @@ var details = JSON.parse(localStorage.getItem("User_data"))
 if(details.name != undefined){
 
 button1.setAttribute("class","p-2 rounded text-gray-600 absolute right-2")
-button1.innerHTML =`<span class="material-icons" style="margin-top: 8px;">account_circle</span><span class="relative -top-2"> ${details.name}</span>`
+button1.innerHTML =`<span class="material-icons" style="margin-top: 8px;">account_circle</span><span class="relative -top-2"> ${details.name.substring(0,7)}...</span>`
 var flag = 1;
 }
 

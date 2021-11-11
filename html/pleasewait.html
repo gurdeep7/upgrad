@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please Wait</title>
+    <link rel="stylesheet" href="../tailwind/tailwind.css">
+    <link rel="SHORTCUT ICON" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="ICON" href="../images/favicon.ico" type="image/ico" />
+</head>
+<style>
+    .loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #26cc10;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+<body>
+    <header>
+        <nav class="flex fixed items-center px-4 box-border border-2 w-full bg-white">
+            <div class="w-28"><img class="cursor-pointer" src="../images/logo.png" alt=""></div>
+        <ul class="hidden sm:flex flex-1 justify-end items-center gap-2 text-xl">
+            <div class="rounded-full h-12 w-12 flex items-center justify-center bg-gray-400"><img class="cursor-pointer" src="../images/logo.png" alt=""></div>
+            <h6 id="username" class="">Username</h6>
+        </ul>   
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <div class="">
+        <h1 class="text-center text-2xl font-bold">Screening Round</h1>
+        <h3 class="text-center text-lg ">Executive PG Programme in Data Science</h3>
+    </div>
+    <div>
+        <h1 class="text-center mt-16 text-2xl mb-4">Please Wait...</h1>
+    </div>
+    
+        <div class="loader m-auto p-48"></div>
+
+    <div>
+        <h1 class="text-center mt-4 text-3xl font-bold">Checking your eligibility for this course...</h1>
+    </div>
+</body>
+</html>
+<script src="../scripts/userDetails.js"></script>
+<script>
+    setTimeout(function(){
+            window.location.href = 'success.html';
+         }, 3000);
+</script>
