@@ -50,10 +50,11 @@
     </div>
 </div>
 <div>
-    <button class="p-2 rounded text-white absolute right-1 shadow-md bg-gradient-to-r from-red-700 to-red-300 hover:shadow-2xl">Sign Up</button>
+    <button class="p-2 rounded text-white absolute right-1 shadow-md bg-gradient-to-r from-red-700 to-red-300 hover:shadow-2xl" id="button1">Sign Up</button>
 </div>
 </div>
 <!-- navbar end -->
+<!-- SlideShow Start -->
 <div class="swiper mySwiper mt-3">
     <div class="swiper-wrapper">
       <div class="swiper-slide ">
@@ -89,6 +90,7 @@
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
   </div>
+  <!-- SlideShow End -->
   <div class="grid grid-rows-2 lg:grid-rows-1  grid-flow-col gap-4 w-9/12 m-auto mt-3">
     <div>
         <div class="inline-block">
@@ -142,6 +144,7 @@
   <img src="../images/nmimslogo.jpg">
 
 </div>
+<!-- grid Start -->
 <div id="explore" class="text-center mt-8 text-4xl font-bold">Explore Our Courses</div>
 <div class="w-full lg:w-9/12 m-auto">
   <div class="w-1/4 inline-block align-top sticky top-2 shadow-2xl text-gray-600 font-semibold">
@@ -156,12 +159,15 @@
   <div class="inline-grid grid-cols-1 w-8/12 md:grid-cols-2  grid-flow-row" id="explore_courses"></div>
 </div>
 <div class="w-auto align-text-top"></div>
-
+<!-- grid Stop -->
 <div class="w-14 h-14 z-10 rounded-2xl fixed shadow-2xl right-5 bottom-5 material-icons md-48 text-gs-red p-1" style="font-size: 48px;">
 
     perm_phone_msg
    
 </div>
+
+
+
 <!-- Parag work -->
 <div class="transform transition delay-700 lg:w-9/12  m-auto border-t-2 mt-5 border-gray-600">
 
@@ -814,6 +820,28 @@
 
     </div>
   </div>
+  <!-- displaying modal -->
+<div id="modal">
+
+  <!-- close button -->
+  <ion-icon name="close-outline" size="large" id="closebutton"></ion-icon>
+  
+  <!-- content inside modal -->
+  <div id="modalcontent">
+      <img src="../images/modal.png"/>
+      <div id="containing">
+          <!-- toggle checkbox -->
+          <input type="checkbox" class="toogle_input">
+           <label for="toogle_input"></label>
+          <h2 class="content email_content">Enter email Id</h2>
+          <h2 class="content email_refercontent">Enter your email ID to get referral benefits</h2>
+          <input type="email" placeholder="johndoe@example.com" id="email_input"/>
+          <button id="continue_button">CONTINUE &nbsp<ion-icon name="arrow-forward-outline"></ion-icon></button>
+          <div id="phone_no">Proceed with Phone</div>
+          <h4>Have a Referral Code?</h4>
+      </div>   
+</div>
+ <!-- modal end -->
 </body>
 </html>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
