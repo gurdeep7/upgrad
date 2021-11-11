@@ -1,3 +1,5 @@
+
+
 const courses=[{
     title : "Global Doctor of Business Administration",
     image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
@@ -459,6 +461,8 @@ function showondrop(data){
     });
 
 }
+//nav bar ends
+
 //Display in Grid
 function showgrid(value){
     
@@ -521,6 +525,7 @@ var swiper = new Swiper(".mySwiper", {
 
 
 //Copy from deepesh
+var flag = 0;
 let modal=document.getElementById("modal");
 //sign up button 
 let signupbutton=document.getElementById("button1");
@@ -538,7 +543,14 @@ window.addEventListener("click",clickoutside);
 
 //function for click event on signup
 function clicksignup(){
+    if(flag == 0){
     modal.style.display="block";
+    }else{
+        if(confirm("Are You sure to logout")==true){
+            localStorage.setItem("User_data",JSON.stringify([]));
+            window.location.reload()
+        }
+    }
 }
 
 //function for click event on close modal
@@ -565,7 +577,6 @@ let email_input=document.getElementById("email_input");
         email_input.addEventListener("input",validatemail)
 //adding user data in local storage
 function continuebutton(){
-    
     
         let user_datas=JSON.parse(localStorage.getItem("User_data"));
         
@@ -600,9 +611,7 @@ function continuebutton(){
                 continue_button.onclick=function(){forward();}
             }
             else{
-               let email={email:email_input.value};
-               user_datas.push(email);
-               localStorage.setItem("User_data",JSON.stringify(user_datas));
+              
 
                //appending details for taking user details
                let containing=document.getElementById("containing");
@@ -613,14 +622,23 @@ function continuebutton(){
                inputname.setAttribute("id","email_input");
                inputname.placeholder="Enter your name";
                let inputmobile=document.createElement("input");
-               inputmobile.setAttribute("id","email_input");
+               inputmobile.type = "number"
+               inputmobile.setAttribute("id","mobile_input");
+               inputmobile.oninput=()=> validatemobile(inputmobile.value,inputname.value)
                inputmobile.placeholder="Enter your mobile no.";
                let continue_button=document.createElement("button");
                continue_button.innerHTML="Continue";
-               continue_button.disabled = true;
+               
                continue_button.setAttribute("id","continue_button");
                containing.append(div,inputname,inputmobile,continue_button);
-               continue_button.onclick=function(){forward();}    
+               continue_button.onclick=function(){
+                let user_datas={
+                    email:email_input.value,
+                    name: inputname.value,
+                    mobile: inputname.value
+                };
+                localStorage.setItem("User_data",JSON.stringify(user_datas));
+                forward();}    
                
         }
 }
@@ -645,3 +663,35 @@ function validatemail() {
     continue_button.disabled = true;
   }
 }
+
+function validatemobile(mobile,name) {
+   
+    let continue_button=document.getElementById("continue_button");
+   if(name.length > 3){
+       if(mobile.length == 10){
+       continue_button.style.backgroundColor = "red"
+    continue_button.disabled = false;
+    console.log("done")
+       }
+   }else{
+    continue_button.disabled = true;
+    continue_button.style.backgroundColor = "gray"
+   }
+}
+
+//Login Check
+var details = JSON.parse(localStorage.getItem("User_data"))
+if(details.name != undefined){
+
+button1.setAttribute("class","p-2 rounded text-gray-600 absolute right-2")
+button1.innerHTML =`<span class="material-icons" style="margin-top: 8px;">account_circle</span><span class="relative -top-2"> ${details.name}</span>`
+var flag = 1;
+}
+
+//import footer
+
+// import footer from "../components/footer.js";
+
+// let footerb = document.getElementById("footerb")
+
+// footerb.innerHTML = footer()
