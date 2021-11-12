@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="../style/pay.css" />
+  </head>
+  <body>
+    <header>
+      <div class="center_me">
+        <h1>Program Payment</h1>
+        <p id= "coursename">Program Name</p>
+      </div>
+      <!-- yet to be implemented -->
+    </header>
+    <div class="container1">
+      <div class="container_left">
+        <h2 class="gapping">Personal information</h2>
+        <div  >
+          <div class="grid">
+            <div class="grid_item">
+              <label for="first_name">First Name</label>
+              <input type="text" id="first_name" />
+            </div>
+            <div class="grid_item">
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" />
+            </div>
+            <!-- emial FROM LOACL STORAGE -->
+            <div class="grid_item">
+              <label for="last_name">Email</label>
+              <input type="text" id="email"/>
+            </div>
+            <div class="grid_item">
+              <label for="c_no">Phone Number</label>
+              <input type="tel" id="c_no" />
+            </div>
+          </div>
+          <!-- BILLING ADDRESS -->
+          <h2 class="gapping">Billing Address</h2>
+          <!-- addres line one  -->
+          <label for="addres1">ADDRESS LINE 1</label>
+          <input class="resize" type="text" name="" id="addres1">
+          <!-- addres line one  -->
+          <label for="addres2">ADDRESS LINE 2</label>
+          <input class="resize" type="text" name="" id="addres2">
+          <!-- city -->
+          <label for="city">CITY</label>
+          <input class="resize" type="text" name="" id="city">
+          <!-- state -->
+          <label for="state">STATE</label>
+          <input class="resize" type="text" name="" id="state">
+          <!-- country -->
+          <label for="country">COUNTRY</label>
+          <input class="resize" type="text" name="" id="country">
+          <!-- regestration -->
+          <label for="regester">ARE YOU REGESTERED GST USER?</label>
+          <input class="resize" type="text" name="" id="regester">
+          <h2 class="gapping">Payment Options</h2>
+        </div>
+        <!-- gettin user details for payments -->
+        <div  class="carddetails">
+          <h2 style="color: white;" class="gapping">Card Details</h2>
+          <hr style="width: 75%; margin: auto;margin-bottom: 2%; color: rgb(51, 10, 5);">
+          <div class="card_details">
+            <div class="card_details_grid">
+              <div class="grid_item">
+                <label for="card_no">CARD NUMBER</label>
+                <input type="tel" id="card_no"  maxlength="12" placeholder="1254 4568 4569"/>
+              </div>
+              <div class="grid_item">
+                <label for="card_no">EXPIRY DATE</label>
+                <input type="month" id="card_no" min="2021-11" placeholder="MM/YYYY"/>
+              </div>
+              <div class="grid_item">
+                <label for="card_no">CVV</label>
+                <input type="tel" id="card_no" / maxlength="3" placeholder="123">
+              </div>
+            </div>
+            <input onclick="SenData()" class="payment" type="submit" value="Confirm Payment">
+          </div>  
+        </div>
+  
+      </div>
+      <!-- full left container_right -->
+      <div class="container_right">
+        <h2>Payment Details</h2>
+        <div class="cource__fees bill_box">
+          <div class="const">COURSE FEE</div>
+          <div class="rupees" id="courseFee">2121</div>
+        </div>
+        <div class="taxes bill_box">
+          <div class="const">TAXES  <a href="#">seeDetails</a></div>
+          <div class="rupees" id="taxAmount">2121</div>
+        </div>
+        <div class="total_pay bill_box">
+          <div class="const bold">TOTAL</div>
+          <div class="rupees" id= "total_fee">Rupees</div>
+        </div>
+        <hr />
+        <p class="pay">PAYMENT TYPE</p>
+        <!-- 2 radio buttons -->
+        <div class="payment_type">
+          <div class="payment_type_item">
+            <input type="radio" id="Part_Time" name="pay_type" />
+            <label for="Part_Time">Part Time</label>
+          </div>
+          <div class="payment_type_item">
+            <input type="radio" id="Full_Payment" name="pay_type" />
+            <label for="Full_Payment">Full Payment</label>
+          </div>
+      </div>
+      <p class="pay border">AMOUNT PAYABLE</p>
+      <div class="total_pay_rs bill_box">
+        <div class="const bold">TOTAL</div>
+      </div>
+      <div class="minimum_pay">
+        <div class="info">i</div>
+        Minimum amount payable is Rs. 2,000
+      </div>
+    </div>
+    <!-- <img src="./Screenshot from 2021-11-12 12-54-37.png" alt="" /> -->
+  </body>
+  <script src="../scripts/pay.js"></script>
+</html>
