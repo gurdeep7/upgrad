@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss build ./style/src.css  -o  ./tailwind/tailwind.css"
+    "build": "tailwindcss build ./style/src.css  -o  ./tailwind/tailwind.css",
+    "prod": "NODE_ENV=production npx tailwindcss build ./style/src.css  -o  ./tailwind/tailwind.css"
   },
   "author": "",
   "license": "ISC",
