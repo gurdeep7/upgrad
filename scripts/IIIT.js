@@ -59,17 +59,6 @@ const courses=[
     link : "#",
     offer: "New"
 },
-
-{
-    title : "Master of Science in Data Science",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/UoA__1627633589303.png",
-    logo: "../images/arizonalogo.png",
-    university: "University of Arizona",
-    category: "DataScience",
-    Duration: 18,
-    link : "#",
-    offer: "New"
-},
 {
     title : "Executive PG Program in Data Science",
     image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620048290508.png",
@@ -80,6 +69,17 @@ const courses=[
     link : "IIIT.html",
     offer: "Trending"
 },
+{
+    title : "Master of Science in Data Science",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/UoA__1627633589303.png",
+    logo: "../images/arizonalogo.png",
+    university: "University of Arizona",
+    category: "DataScience",
+    Duration: 18,
+    link : "#",
+    offer: "New"
+},
+
 {
     title : "Master of Science in Data Science",
     image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620910521049.png",
