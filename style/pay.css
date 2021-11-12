@@ -1,0 +1,186 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Promixa Nova", -apple-system, BlinkMacSystemFont, Roboto, Arial,
+    sans-serif;
+}
+body {
+  background-color: #fbf7fb;
+}
+header {
+  background: linear-gradient(0.25turn, #ff665c, #fd8773, #ff8648);
+  color: white;
+}
+.center_me {
+  margin: auto;
+  width: 77%;
+  padding: 2.3%;
+}
+.center_me > h1 {
+  padding-bottom: 18px;
+}
+.container1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 1.3%;
+  margin-top: 0.5%;
+}
+.container_left {
+  width: 40%;
+  padding: 2.3%;
+  background-color: white;
+}
+.container_right {
+  top: 5px;
+  position: sticky;
+  width: 22%;
+  padding: 2.3%;
+  background-color: white;
+  height: 70vh;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.3%;
+}
+input,select {
+  width: 98%;
+  padding: 5%;
+  margin: 2% 0% 1.2%;
+}
+label {
+  font-size: 0.8rem;
+  color: #949294;
+}
+.email {
+  background-color: #7ba9be;
+  width: 98%;
+  padding: 5%;
+  margin: 2% 0% 1.2%;
+}
+.gapping {
+  margin: 4% 0% 4%;
+}
+.resize {
+  padding: 13px;
+}
+/* // .input_left { */
+.bill_box {
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fbf7fb;
+  margin: 5% 0%;
+  padding: 4% 5%;
+}
+.const {
+  color: #a8a6a8;
+}
+.const > a {
+  color: #7ba9be;
+}
+.rupees {
+  color: black;
+  font-weight: 600;
+}
+.bold {
+  font-weight: 600;
+  color: black;
+}
+.total_pay {
+  background-color: white;
+}
+.pay {
+  font-size: 13px;
+  color: #a8a6a8;
+  margin: 6% 0% 6% 0%;
+  text-align: center;
+}
+.payment_type {
+  display: flex;
+  justify-content: space-between;
+}
+.minimum_pay {
+  font-weight: 800;
+  font-size: 0.8em;
+  display: flex;
+}
+.info {
+  color: white;
+  background-color: black;
+  text-align: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+.border {
+  border: 1px solid #dbd9db;
+  background-color: #eeebee;
+  padding: 2.2% 0%;
+}
+/* .carddetails {
+  background: linear-gradient(0.25turn, #ff665c, #fd8773, #ff8648);
+  color: white;
+  border: 1px solid #fbf7fb;
+  text-align: center;
+  border-radius: 15px;
+} */
+
+.carddetails {
+  border: 1px solid #c756c7;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: 600;
+  transition: box-shadow 0.5s ease-in-out, border-color 0.4s ease-in-out;
+  background: linear-gradient(0.25turn, #ff665c, #fd8773, #ff8648);
+}
+.carddetails:hover {
+  background-color: #e7615c;
+  color: #000;
+  box-shadow: 0 0 5px #e7615c, 0 0 20px rgb(255 255 0 / 0.8),
+    0 0 35px rgb(255 255 0 / 0.7), 0 0 50px rgb(255 255 0 / 0.6);
+  border-color: #fff;
+}
+
+.grid_item > label {
+  color: rgb(185, 178, 178);
+  font-size: 1.8em;
+  font-size: 18px;
+}
+.grid_item > input {
+  width: 95%;
+  padding: 2.7% 4%;
+  margin: 2% 0% 1.2%;
+}
+/* .payment {
+  background: linear-gradient(0.25turn, #abff5c, #73d1fd, #48b6ff);
+  border: none;
+  padding: 1.5% 5%;
+  width: 30%;
+  border-radius: 7px;
+} */
+
+.payment {
+  outline: 0;
+  position: relative;
+  display: inline-block;
+  padding: 10px 40px;
+  font-size: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #ffff00;
+  background: #ffff00;
+  color: #000;
+  font-weight: 600;
+  transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+.payment:hover {
+  background-color: #ffff00;
+  color: #000;
+  box-shadow: 0 0 5px #ffff00, 0 0 20px rgb(255 255 0 / 0.8),
+    0 0 35px rgb(255 255 0 / 0.7), 0 0 50px rgb(255 255 0 / 0.6);
+  border-color: #fff;
+}
