@@ -146,7 +146,7 @@ label {
 }
 
 .grid_item > label {
-  color: white;
+  color: rgb(185, 178, 178);
   font-size: 1.8em;
   font-size: 18px;
 }

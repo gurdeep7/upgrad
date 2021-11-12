@@ -18,7 +18,7 @@
     <div class="container">
       <div class="container_left">
         <h2 class="gapping">Personal information</h2>
-        <form action="">
+        <div  >
           <div class="grid">
             <div class="grid_item">
               <label for="first_name">First Name</label>
@@ -34,7 +34,7 @@
               <div class="email">email</div>
             </div>
             <div class="grid_item">
-              <label for="c_no">PHONE NUMBER</label>
+              <label for="c_no">Phone Number</label>
               <input type="tel" id="c_no" />
             </div>
           </div>
@@ -59,10 +59,10 @@
           <label for="regester">ARE YOU REGESTERED GST USER?</label>
           <input class="resize" type="text" name="" id="regester">
           <h2 class="gapping">Payment Options</h2>
-        </form>
+        </div>
         <!-- gettin user details for payments -->
-        <form action="" class="carddetails">
-          <h2 class="gapping">Card Details</h2>
+        <div  class="carddetails">
+          <h2 style="color: white;" class="gapping">Card Details</h2>
           <hr style="width: 75%; margin: auto;margin-bottom: 2%; color: rgb(51, 10, 5);">
           <div class="card_details">
             <div class="card_details_grid">
@@ -79,9 +79,9 @@
                 <input type="tel" id="card_no" / maxlength="3" placeholder="123">
               </div>
             </div>
-            <input class="payment" type="submit" value="Conform Payment">
+            <input onclick="SenData()" class="payment" type="submit" value="Conform Payment">
           </div>  
-        </form>
+        </div>
   
       </div>
       <!-- full left container_right -->
@@ -92,7 +92,7 @@
           <div class="rupees">2121</div>
         </div>
         <div class="taxes bill_box">
-          <div class="const">COURCE FEE <a href="#">seeDetails</a></div>
+          <div class="const">TAXES  <a href="#">seeDetails</a></div>
           <div class="rupees">2121</div>
         </div>
         <div class="total_pay bill_box">
