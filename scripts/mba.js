@@ -629,6 +629,7 @@ function screen(){
     if(flag == 0){
         modal.style.display="block";
     }else{
+        details.course = "MBA (Executive) with Specialisation in Business Analytics";
         details.fees = 400000;
         localStorage.setItem("User_data",JSON.stringify(details))
         window.location.href="screening.html"

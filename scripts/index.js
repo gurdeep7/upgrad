@@ -1,6 +1,17 @@
 
 
-const courses=[{
+const courses=[
+    {
+        title : "MBA (Executive) with Specialisation in Business Analytics",
+        image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/nmims__1619435204977.png",
+        logo: "../images/nmims_logo.png",
+        university: "NMIMS",
+        category: "Management",
+        Duration: 18,
+        link : "mba.html",
+        offer: "New"
+    },
+    {
     title : "Global Doctor of Business Administration",
     image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
     logo: "../images/SSBMlogo.png",
@@ -50,16 +61,7 @@ const courses=[{
     link : "#",
     offer: "New"
 },
-{
-    title : "MBA (Executive) with Specialisation in Business Analytics",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/nmims__1619435204977.png",
-    logo: "../images/nmims_logo.png",
-    university: "NMIMS",
-    category: "Management",
-    Duration: 18,
-    link : "mba.html",
-    offer: "New"
-},
+
 {
     title : "Master of Science in Data Science",
     image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/UoA__1627633589303.png",
