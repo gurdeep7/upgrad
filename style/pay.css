@@ -45,7 +45,7 @@ header {
   grid-template-columns: 1fr 1fr;
   gap: 1.3%;
 }
-input {
+input,select {
   width: 98%;
   padding: 5%;
   margin: 2% 0% 1.2%;
