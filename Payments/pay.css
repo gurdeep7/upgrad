@@ -121,3 +121,66 @@ label {
   background-color: #eeebee;
   padding: 2.2% 0%;
 }
+/* .carddetails {
+  background: linear-gradient(0.25turn, #ff665c, #fd8773, #ff8648);
+  color: white;
+  border: 1px solid #fbf7fb;
+  text-align: center;
+  border-radius: 15px;
+} */
+
+.carddetails {
+  border: 1px solid #c756c7;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: 600;
+  transition: box-shadow 0.5s ease-in-out, border-color 0.4s ease-in-out;
+  background: linear-gradient(0.25turn, #ff665c, #fd8773, #ff8648);
+}
+.carddetails:hover {
+  background-color: #e7615c;
+  color: #000;
+  box-shadow: 0 0 5px #e7615c, 0 0 20px rgb(255 255 0 / 0.8),
+    0 0 35px rgb(255 255 0 / 0.7), 0 0 50px rgb(255 255 0 / 0.6);
+  border-color: #fff;
+}
+
+.grid_item > label {
+  color: white;
+  font-size: 1.8em;
+  font-size: 18px;
+}
+.grid_item > input {
+  width: 95%;
+  padding: 2.7% 4%;
+  margin: 2% 0% 1.2%;
+}
+/* .payment {
+  background: linear-gradient(0.25turn, #abff5c, #73d1fd, #48b6ff);
+  border: none;
+  padding: 1.5% 5%;
+  width: 30%;
+  border-radius: 7px;
+} */
+
+.payment {
+  outline: 0;
+  position: relative;
+  display: inline-block;
+  padding: 10px 40px;
+  font-size: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #ffff00;
+  background: #ffff00;
+  color: #000;
+  font-weight: 600;
+  transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+.payment:hover {
+  background-color: #ffff00;
+  color: #000;
+  box-shadow: 0 0 5px #ffff00, 0 0 20px rgb(255 255 0 / 0.8),
+    0 0 35px rgb(255 255 0 / 0.7), 0 0 50px rgb(255 255 0 / 0.6);
+  border-color: #fff;
+}
