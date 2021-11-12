@@ -55,7 +55,7 @@ const courses=[{
     university: "NMIMS",
     category: "Management",
     Duration: 18,
-    link : "#",
+    link : "mba.html",
     offer: "New"
 },
 {
@@ -607,6 +607,9 @@ function validatemobile(mobile,name) {
        continue_button.style.backgroundColor = "red"
     continue_button.disabled = false;
     console.log("done")
+       }else{
+        continue_button.disabled = true;
+        continue_button.style.backgroundColor = "gray"
        }
    }else{
     continue_button.disabled = true;
@@ -626,7 +629,8 @@ function screen(){
     if(flag == 0){
         modal.style.display="block";
     }else{
-    localStorage.set
+        details.fees = 299000;
+        localStorage.setItem("User_data",JSON.stringify(details))
         window.location.href="screening.html"
     }
 }

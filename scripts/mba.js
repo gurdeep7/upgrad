@@ -1,5 +1,3 @@
-
-
 const courses=[{
     title : "Global Doctor of Business Administration",
     image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
@@ -461,69 +459,6 @@ function showondrop(data){
     });
 
 }
-//nav bar ends
-
-//Display in Grid
-function showgrid(value){
-    
-    let data = courses.filter(el => el.category == value)
-    showongrid(data)
-    
-}
-showgrid("Management");
-function showongrid(data){
-    grid = document.getElementById("explore_courses")
-    grid.innerHTML = null;
-    data.forEach(({title,logo,Duration,university,link,offer,image}) => {
-        let div = document.createElement("div")
-        div.onclick = ()=>{
-            window.location.href = link;
-        }
-        div.setAttribute("class","border-2 border-gray-300 cursor-pointer shadow-xl rounded-2xl m-3")
-         let img = document.createElement("img")
-         img.src = image;
-         img.setAttribute("class","w-full rounded-t-2xl h-32")
-         let univerity1 = document.createElement("p")
-         univerity1.textContent = university;
-         univerity1.setAttribute("class","inline-block w-7/12 h-12 border-l-2  align-top m-2 border-gray-600")
-         let logo1 = document.createElement("img")
-         logo1.src = logo;
-         logo1.setAttribute("class","inline-block m-2 w-3/12 h-12")
-         let title1 = document.createElement("p")
-         title1.setAttribute("class","w-11/12 text-xl border-gray-200 font-bold ml-3 border-b-2")
-         title1.textContent = title;
-         let duration = document.createElement("div")
-         duration.setAttribute("class","w-auto ml-3 p-2 text-gray-600")
-         duration.innerHTML = `<span class="material-icons block align-bottom">menu_book</span> ${Duration} Months `
-         let mentorship = document.createElement("div")
-         mentorship.setAttribute("class","w-auto ml-3 -mt-3 p-2 text-gray-600")
-         mentorship.innerHTML = `<span class="material-icons block align-bottom">supervisor_account</span> 1-1 Mentorship & Job Support`
-         let button = document.createElement("div")
-         button.setAttribute("class","w-10/12 m-auto text-center mb-2 text-gs-red border-2 p-1")
-         button.innerHTML = `VIEW PROGRAM &#10132;`
-         div.append(img,logo1,univerity1,title1,duration,mentorship,button)
-         grid.append(div)
-
-    });
-}
-// slideshow start
-var swiper = new Swiper(".mySwiper", {
-    cssMode: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    mousewheel: true,
-    keyboard: true,
-  });
-// Slideshow Stop
-
-
-
-
 //Copy from deepesh
 var flag = 0;
 let modal=document.getElementById("modal");
@@ -644,7 +579,7 @@ function continuebutton(){
 }
 }
 function forward(){
-    window.location.href="index.html";
+    window.location.reload();
 }
 
 function validatemail() {
@@ -688,13 +623,14 @@ if(details.name != undefined){
 
 button1.setAttribute("class","p-2 rounded text-gray-600 absolute right-2")
 button1.innerHTML =`<span class="material-icons" style="margin-top: 8px;">account_circle</span><span class="relative -top-2"> ${details.name.substring(0,7)}...</span>`
-var flag = 1;
+flag = 1;
 }
-
-//import footer
-
-// import footer from "../components/footer.js";
-
-// let footerb = document.getElementById("footerb")
-
-// footerb.innerHTML = footer()
+function screen(){
+    if(flag == 0){
+        modal.style.display="block";
+    }else{
+        details.fees = 400000;
+        localStorage.setItem("User_data",JSON.stringify(details))
+        window.location.href="screening.html"
+    }
+}
