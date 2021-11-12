@@ -1,6 +1,17 @@
 
 
-const courses=[{
+const courses=[
+    {
+        title : "MBA (Executive) with Specialisation in Business Analytics",
+        image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/nmims__1619435204977.png",
+        logo: "../images/nmims_logo.png",
+        university: "NMIMS",
+        category: "Management",
+        Duration: 18,
+        link : "mba.html",
+        offer: "New"
+    },
+    {
     title : "Global Doctor of Business Administration",
     image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/SSBM__1619611109162.png",
     logo: "../images/SSBMlogo.png",
@@ -51,14 +62,14 @@ const courses=[{
     offer: "New"
 },
 {
-    title : "MBA (Executive) with Specialisation in Business Analytics",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/nmims__1619435204977.png",
-    logo: "../images/nmims_logo.png",
-    university: "NMIMS",
-    category: "Management",
-    Duration: 18,
-    link : "#",
-    offer: "New"
+    title : "Executive PG Program in Data Science",
+    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620048290508.png",
+    logo: "../images/iitb_logo.png",
+    university: "IIT bangalore",
+    category: "DataScience",
+    Duration: 12,
+    link : "IIIT.html",
+    offer: "Trending"
 },
 {
     title : "Master of Science in Data Science",
@@ -70,16 +81,7 @@ const courses=[{
     link : "#",
     offer: "New"
 },
-{
-    title : "Executive PG Program in Data Science",
-    image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620048290508.png",
-    logo: "../images/iitb_logo.png",
-    university: "IIT bangalore",
-    category: "DataScience",
-    Duration: 12,
-    link : "#",
-    offer: "Trending"
-},
+
 {
     title : "Master of Science in Data Science",
     image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620910521049.png",
@@ -672,6 +674,9 @@ function validatemobile(mobile,name) {
        continue_button.style.backgroundColor = "red"
     continue_button.disabled = false;
     console.log("done")
+       }else{
+        continue_button.disabled = true;
+        continue_button.style.backgroundColor = "gray"
        }
    }else{
     continue_button.disabled = true;

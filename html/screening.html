@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Screening</title>
     <link rel="stylesheet" href="../tailwind/tailwind.css">
-    <link rel="SHORTCUT ICON" href="../images/favicon.ico" type="image/x-icon" />
+    <link rl="SHORTCUT ICON" href="../images/favicon.ico" type="image/x-icon" />
     <link rel="ICON" href="../images/favicon.ico" type="image/ico" />
 </head>
 <body>
@@ -41,17 +41,17 @@
                
                 <label for="gender" class="mb-4 text-upgrad-blue text-xl">Gender</label>
                 <div class="flex flex-1 gap-4 border-box mb-8">
-                    <button class="border-box border-4 p-4 text-xl font-bold text-upgrad-blue rounded-2xl">Male</button>
-                    <button class="border-box border-4 p-4 text-xl font-bold text-upgrad-blue rounded-2xl">Female</button>
-                    <button class="border-box border-4 p-4 text-xl font-bold text-upgrad-blue rounded-2xl">I do not wish to specify</button>
+                    <button class="border-box border-4 p-4 text-xl font-bold text-upgrad-blue rounded-2xl" id="male">Male</button>
+                    <button class="border-box border-4 p-4 text-xl font-bold text-upgrad-blue rounded-2xl" id="female">Female</button>
+                    <button class="border-box border-4 p-4 text-xl font-bold text-upgrad-blue rounded-2xl" id="noGender">I do not wish to specify</button>
                 </div>
                 <label for="city_name" class=" text-upgrad-blue text-xl">City</label>
                 <input type="text" class="mb-8  py-2 text-xl" name="city" placeholder="Enter Your City Name" id="city_name">
                 
                 <label for="education" class="mb-4 text-upgrad-blue text-xl">Have you completed Graduation?</label>
                 <div class="flex flex-1 gap-4 border-box mb-8">
-                    <button class="border-box border-4 p-4 text-xl font-bold text-upgrad-blue rounded-2xl">Yes</button>
-                    <button class="border-box border-4 p-4 text-xl font-bold text-upgrad-blue rounded-2xl">No</button>
+                    <button class="border-box border-4 p-4 text-xl font-bold text-upgrad-blue rounded-2xl" id="g_yes">Yes</button>
+                    <button class="border-box border-4 p-4 text-xl font-bold text-upgrad-blue rounded-2xl" id="g_no">No</button>
                 </div>
                 <label for="referal" class="mb-4 text-upgrad-blue text-xl">Referal Code</label>
                 <input type="text" class="mb-4  py-2 text-xl" placeholder="Enter Referal Code" id="referal">
@@ -68,8 +68,3 @@
 </html>
 <script src="../scripts/userDetails.js"></script>
 <script src="../scripts/screening.js"></script>
-<script>
-    function myFunction() {
-  location.replace("pleasewait.html")
-}
-</script>

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NMIMS MBA</title>
+    <link rel="ICON" href="../images/favicon.ico"  />
+    <link rel="SHORTCUT ICON" href="../images/favicon.ico"  />
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../tailwind/tailwind.css"/>
+    <link rel="stylesheet" href="../style/mystylemba.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="flex relative mt-5 h-10 lg:w-9/12 m-auto z-10">
+        <img class="w-24 h-12 m-auto sm:m-0"  onclick="window.location.href='index.html'" src="../images/logo.jpg"/>
+        <div class="dropdown ml-4 cursor-pointer hidden z-10 sm:block">
+        <button class="bg-gs-red text-white hover:bg-white  hover:text-gs-red border-gs-red border-2 w-28 rounded h-8 gs-courses dropbtn">COURSES</button>
+        <div class="dropdown-content bg-white shadow-md">
+            <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`Management`)">MBA & DBA(6) <span class="float-right text-2xl block -mt-1.5 ">></span></div>
+            <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red"onmouseenter="showcourse(`DataScience`)">Data Science(7)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
+            <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`MachineLearning`)">Machine Learning(6)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
+            <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`BusinessAnalytics`)">Business Analitics(5)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
+            <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`Marketing`)">Marketing(3)<span class="float-right text-2xl block -mt-1.5 ">></span></div>    
+            <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`Software`)">Software(10)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
+            <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`Blockchain`)">Block Chain(3)<span class="float-right text-2xl block -mt-1.5 ">></span></div> 
+            <div class="sidedropdown hidden absolute bg-white shadow-2xl" id="sidedropdown">
+        
+            </div>
+            </div>
+            
+        </div>
+        <div class="hidden lg:absolute mt-3 float-right sm:flex lg:right-32">
+            
+          
+            <div class="text-gray-600 m-2  lg:ml-7 cursor-pointer font-bold text-sm hover:text-gs-red" onclick="location.href='recruit.htm'">HIRE FROM UPGRAD</div>
+            <div class="text-gray-600 m-2 lg:ml-7 cursor-pointer font-bold text-sm hover:text-gs-red" onclick="location.href='upGradAbroad.html'">STUDY ABROAD</div>
+            <div class="text-gray-600 m-2 lg:ml-7 cursor-pointer font-bold text-sm hover:text-gs-red" onclick="location.href='#'">FOR BUSINESS</div>
+            <div class="dropdown-more text-gray-600 m-2 lg:ml-7 cursor-pointer font-bold text-sm hover:text-gs-red" onclick="location.href='#'">MORE
+            <div class="moreshow bg-white rounded absolute hidden shadow-lg">
+                <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Mentorships</div>
+                <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Short Videos</div>
+                <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Master Class</div>
+                <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Refer and Earn</div>
+                <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Blog</div>
+                <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Become A Business Associate</div>
+                <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">UpGrad Events</div>
+            </div>
+            </div>
+        </div>
+        <div>
+            <button class="p-2 rounded text-white absolute right-1 shadow-md bg-gradient-to-r from-red-700 to-red-300 hover:shadow-2xl" id="button1">Sign Up</button>
+        </div>
+        </div>
+    <!-- navbar ends -->
+    <!-- scroll button -->
+    <button id="btnScrollToTop" onclick="window.location.href='#'" class="shadow-2xl">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+
+    </button>
+
+    <div class="relative h-screen my-2 text-white showimage">
+        <img src="https://result.nmims.edu/logos/familybusiness-logo.jpg" class="px-8 py-4 w-72"/>
+        <h1 class="w-2/3 px-8 text-5xl">MBA (Executive) with Specialisation in Business Analytics</h1>
+        <h1 class="w-2/3 px-8 text-2xl">The program is managed and delivered by NMIMS.</h1>
+        <div class="w-3/5 p-8">Become a data-driven manager, with a new-age MBA from NMIMS Global Access School For Continuing Education. Exclusively for professionals with work experience. Start your MBA journey at Rs. 10,500 per month today.</div>
+        <button class="px-8 py-2 mx-8 font-bold bg-red-500 rounded-md" onclick="screen()">Start Application</button>
+
+        <div class="absolute flex w-11/12 py-8 xl:mx-14 mx-8 my-32 text-lg font-bold text-black bg-white rounded-md shadow-2xl -bottom-48">
+            <div class="flex-1 px-4">
+                <div>AICTE Approved</div>
+                <div class="text-xs text-gray-400">Degree Recognition</div>
+            </div>
+            <div class="flex-1 px-4">
+                <div>NAAC A+ Grade</div>
+                <div class="text-xs text-gray-400">University Accreditation</div>
+            </div>
+            <div class="flex-1 px-4">
+                <div>18 Months</div>
+                <div class="text-xs text-gray-400">Recommended 15-18 hrs/week</div>
+            </div>
+            <div class="flex-1 px-4">
+                <div>Dec 26, 2021</div>
+                <div class="text-xs text-gray-400">Start Date</div>
+            </div>
+            <div class="flex-1 px-4">
+                <div>EMI Options</div>
+                <div class="text-xs text-gray-400">Starting at Rs. 10,500</div>
+            </div>
+            <div class="flex-1 px-4">
+                <div>300+</div>
+                <div class="text-xs text-gray-400">Hiring partners</div>
+            </div>
+        </div>
+    </div>
+    
+   <!-- about program section -->
+   <div class="my-32">
+    <div class="text-2xl text-center">About the program</div>
+    <div class="text-sm text-center text-gray-400">Choose from 6 specializations, receive industry mentorship, dedicated career support, learn 14 programming tools & languages & much more</div>
+    <div class="flex m-20">
+        <div class="flex-1 px-8">
+          <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/PGD-DS-IIITB-Card__1612850617337.png" alt="" class="w-80">
+          <div class="my-8 font-bold">6 Unique Specialisations</div>
+          <div class="text-sm text-gray-400">Choose from 6 specializations as per your background & career aspirations. Get an Executive PGP in Data Science from IIITB with a specialization.</div>
+        </div>
+        <div class="flex-1 px-8">
+            <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/Career__1582631089103.png" alt="" class="w-80">
+            <div class="my-8 font-bold">Dedicated Career Assistance</div>
+            <div class="text-sm text-gray-400">Receive 1:1 career counselling sessions & mock interviews with hiring managers. Further your career with our 300+ hiring partners.</div>
+          </div>
+          <div class="flex-1 px-8">
+            <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/Mentorship__1582631119843.png" alt="" class="w-80">
+            <div class="my-8 font-bold">Student Support</div>
+            <div class="text-sm text-gray-400">Student support available 09 AM to 09 PM IST via email or use the Call Back option on the platform to get a response within 2 working hours.</div>
+          </div>
+    </div>
+</div>
+
+    <!-- programme overview section -->
+    <div class="my-16">
+        <div class="mx-12 my-4 text-4xl font-bold">Programme Overview</div> 
+   <div class="mx-12 my-4 text-3xl">Key Highlights</div>
+   <div class="flex mx-12 my-6 text-gray-500">
+       <div class="flex-1 mx-4">
+           
+           <div><ion-icon name="people-circle-outline" size="large"></ion-icon>AICTE Approved MBA (Executive) Degree from NMIMS Global Access</div>
+           <div><ion-icon name="people-outline" size="large"></ion-icon>Awarded Category 1 Autonomy by UGC</div>
+           <div><ion-icon name="business-outline" size="large"></ion-icon>200+ hours of live faculty interaction</div>
+           <div><ion-icon name="cash-outline" size="large"></ion-icon>360-degree career support</div>
+           <div><ion-icon name="body-outline" size="large"></ion-icon>Support available all days 9 AM - 9 PM IST for queries</div>
+       </div>
+       <div class="flex-1 mx-4">
+        <div><ion-icon name="people-outline" size="large"></ion-icon>Alumni status by NMIMS Global Access School for Continuing Education</div>
+        <div><ion-icon name="earth-outline"  size="large"></ion-icon>Business Simulations from Harvard Business Publishing</div>
+        <div><ion-icon name="newspaper-outline" size="large"></ion-icon>3-month industry-driven capstone project</div>
+        <div><ion-icon name="qr-code-outline" size="large"></ion-icon>One-on-one interaction with industry mentors</div>
+        <div><ion-icon name="man-outline" size="large"></ion-icon>The program is managed and delivered by NMIMS</div>
+    </div>
+    <div class="flex-1 mx-4 shadow-2xl px-14">
+        <div>The MBA(X)-BA by NMIMS Global Access is at par with the best on-campus executive MBA programs across the world.</div>
+        <img src="https://result.nmims.edu/logos/familybusiness-logo.jpg" class="px-8 py-4 my-24 w-72"/>    
+    </div>
+
+     </div>
+
+    </div>
+   
+    <!-- Syllabus -->
+    <div class="flex p-12 text-white bg-red-500 my-14" id="down">
+        <div>
+            <div class="text-xl font-bold">Syllabus</div>
+            <div>Best-in-class content by leading faculty and industry leaders in the form of videos, cases and projects</div>
+        </div>
+        <button class="px-6 py-4 mx-12 font-bold text-red-500 bg-white rounded"><a href="../files/NMIMS+Brochure+2021_updated.pdf" target="_blank"><ion-icon name="download-outline" size="large"></ion-icon>DOWNLOAD SYLLABUS</a></button>
+    </div>
+    
+    
+
+    <!-- tools and languages section -->
+    <h1 class="mx-24 text-2xl font-bold">Programming Languages and Tools Covered</h1>
+    <div class="flex m-24 " id="scroll_images">
+        <img src="http://www.invensis.net/blog/wp-content/uploads/2015/05/Benefits-of-Python-over-other-programming-languages-invensis.jpg"/>
+        <img src="https://p.kindpng.com/picc/s/133-1335617_microsoft-excel-logo-png-ms-office-excel-logo.png"/>
+        <img src="data:image/png;base64,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"/>
+        <img src="https://www.umass.edu/archivenewsoffice/sites/default/files/styles/article_small/public/tableau-software.jpg"/>
+        
+    </div>
+
+    <!-- certificate section -->
+    <div class="h-auto p-8 my-32 text-white bg-red-500">
+        <div class="flex font-bold">
+            <div class="m-2 border-b-2 border-red-500 hover:border-white" id="show_iit">MBA (Executive) with Specialisation in Business Analytics</div>
+            <div class="m-2 border-b-2 border-red-500 hover:border-white" id="show_joint">Joint Participation Certificate</div>
+        </div>
+        <hr>
+        
+        <!-- showing course certificate -->
+            <div id="showExecutive">
+                <div class="flex">
+            <div class="p-8 ">
+                <div class="my-8 text-3xl">MBA (Executive) with Specialisation in Business Analytics</div>
+                <div>The program is managed and delivered by NMIMS.</div>
+                <ul class="m-8 leading-10 list-disc">
+                    <li>Awarded Category 1 Autonomy by UGC</li>
+                    <li>Alumni status by NMIMS Global Access School for Continuing Education</li>
+                    <li>3-month industry-driven capstone project</li>
+                    <li>Business Simulations from Harvard Business Publishing</li>
+                </ul>
+            </div>
+            <img class="my-16 rounded-md w-72 h-80" src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/new-images%2Fprogram-certificates-v2/mba_ba_cert__1634210350224.png"/>
+            </div>
+        </div>
+
+       <!-- showing participation certificate -->
+        <div id="showParticipation">
+            <div class="flex">
+            <div class="p-8 ">
+                <div class="my-8 text-3xl">India's 1st EPGP Aligned to SSC NASSCOM Competency Standards</div>
+                <div>Complete all the courses successfully to obtain this joint participation certificate from upGrad and FutureSkills NASSCOM</div>
+                <ul class="m-8 leading-10 list-disc">
+                    <li>India's 1st Executive PGP aligned to competency standards developed by NASSCOM in collaboration with industry and approved by Government</li>
+                    <li>Only Executive PGP ensuring Job readiness in the industry since Day 1</li>
+            </div>
+            <img class="my-16 rounded-md w-72 h-80" src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/new-images%2Fprogram-certificates-v2/nascom_new_certificate__1622730687713.jpg"/>
+
+            </div>
+        </div>
+   
+    </div>
+    
+    <!-- Instructors section -->
+   <div class="mx-8 text-3xl">Faculty</div>
+   <div class="mx-8">Learn from best NMIMS faculty and India’s leading Analytics, Marketing, HR, Finance and Supply Chain professionals. Interact weekly with the faculty members and experts to understand concepts, clarify doubts and practice business problem-solving. The faculty list is only indicative.</div>
+    <div class="flex m-4 overflow-x-scroll">
+        <div class="flex-none p-8 m-4 text-center shadow-2xl w-72 h-96">
+            <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/new-images%2Fprofile-pictures/Subhashish_Biswas__1586330941413.png" class="mx-auto text-center rounded-full"/>
+            <div class="font-bold">Subhashish Biswas</div>
+            <div>MBA (IIMA)</div>
+            <img src="https://result.nmims.edu/logos/familybusiness-logo.jpg" class="m-auto w-36"/>
+            <div>An alumnus of IIT and IIM with over 13 years of experience in analytics with industry leaders such as the CitiGroup,Tata Industries,etc.</div>
+            
+        </div>
+        <div class="flex-none p-8 m-4 text-center shadow-2xl w-72 h-96">
+            <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/new-images%2Fprofile-pictures/Pooja_Basu__1586331008594.png" class="mx-auto text-center rounded-full"/>
+            <div class="font-bold">Pooja Basu</div>
+            <div>Ph.D. PGDBA</div>
+            <img src="https://result.nmims.edu/logos/familybusiness-logo.jpg" class="m-auto w-36"/>
+            <div>An alumnus of IIT and IIM with over 13 years of experience in analytics with industry leaders such as the CitiGroup,Tata Industries,etc.</div>
+            
+        </div>
+        <div class="flex-none p-8 m-4 text-center shadow-2xl w-72 h-96">
+            <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/new-images%2Fprofile-pictures/Amit_Parakh__1586331220370.png" class="mx-auto text-center rounded-full"/>
+            <div class="font-bold">Prof. Amit Parakh</div>
+            <div>PGDM,ACA,CS,CFA,FRM</div>
+            <img src="https://result.nmims.edu/logos/familybusiness-logo.jpg" class="m-auto w-36"/>
+            <div>An alumnus of IIT and IIM with over 13 years of experience in analytics with industry leaders such as the CitiGroup,Tata Industries,etc.</div>
+            
+        </div>
+        <div class="flex-none p-8 m-4 text-center shadow-2xl w-72 h-96">
+            <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/new-images%2Fprofile-pictures/Chhavi_Taneja__1586331363912.png" class="mx-auto text-center rounded-full"/>
+            <div class="font-bold">Dr. Chhavi Taneja</div>
+            <div>Ph.d.(University of Delhi)</div>
+            <img src="https://result.nmims.edu/logos/familybusiness-logo.jpg" class="m-auto w-36"/>
+            <div>An alumnus of IIT and IIM with over 13 years of experience in analytics with industry leaders such as the CitiGroup,Tata Industries,etc.</div>
+            
+        </div>
+        <div class="flex-none p-8 m-4 text-center shadow-2xl w-72 h-96">
+            <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/new-images/profile-pictures/harneet-jayakar.jpg" class="mx-auto text-center rounded-full"/>
+            <div class="font-bold">Prof. Harneet Jayakar</div>
+            <div class="text-sm">PGDM (IMT-Ghaziabad),BE(Mumbai University)</div>
+            <img src="https://result.nmims.edu/logos/familybusiness-logo.jpg" class="m-auto w-36"/>
+            <div>An alumnus of IIT and IIM with over 13 years of experience in analytics with industry leaders such as the CitiGroup,Tata Industries,etc.</div>
+            
+        </div>
+        <div class="flex-none p-8 m-4 text-center shadow-2xl w-72 h-96">
+            <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/new-images/profile-pictures/dimple-pandey.jpg" class="w-32 mx-auto text-center rounded-full"/>
+            <div class="font-bold">Dr. Dimple Pandey</div>
+            <div>MBA (ICFAI, Hyderabad)</div>
+            <img src="https://result.nmims.edu/logos/familybusiness-logo.jpg" class="m-auto w-36"/>
+            <div>An alumnus of IIT and IIM with over 13 years of experience in analytics with industry leaders such as the CitiGroup,Tata Industries,etc.</div>
+            
+        </div>
+        
+    </div>
+    
+
+    <!-- admission procedure steps -->
+    <div class="my-12">
+        <div class="m-8 text-3xl">Admission Process</div>
+        <div class="m-8">There are 3 simple steps in the Admission Process which is detailed below:</div>
+        <div class="flex m-4">
+            <div class="flex-none p-8 m-4 shadow-2xl w-96 h-72">
+                <div class="text-xl">Step 1: Take the Online Eligibility Test</div>
+                <p class="my-4 text-sm">Complete your application to take 17 minute online eligilbilty tset with 11 questions to kick start the admission process. The test is designed to assess your quarantine & logical aptitude ensuring you're ready for the programme.</p>
+            </div>
+            <div class="flex-none p-8 m-4 shadow-2xl w-96 h-72">
+                <div class="text-xl">Step 2: Get Shortlisted & Receive your Offer Letter</div>
+                <p class="my-4 text-sm">Our Admission Committee will review your test score & profile. Upon qualifying, an Offer Letter will be ssnt to you confirming your admission to the Executive PGP in Data Science.</p>
+            </div>
+            <div class="flex-none p-8 m-4 shadow-2xl w-96 h-72">
+                <div class="text-xl">Step 3: Block your Seat Begin the Prep Course</div>
+                <p class="my-4 text-sm">Block your seat with a payment of INR 25,000 to enroll into the programme. Began with your Prep course and start your Data Science journey!</p>
+            </div>
+        </div>    
+    </div>
+
+    <!-- fee structure -->
+    <div class="p-8 my-8 bg-gray-100">
+        <div class="my-4 text-5xl">Programme Fee</div>
+        <div class="flex">
+            <div class="my-2 text-3xl">Starting at Rs. 10,500/month</div>
+             <button class="px-4 mx-32 font-bold text-white bg-red-500 rounded">View Plans</button>
+        </div>
+        <div class="text-sm">Program Price 4,00,000. No cost EMI available.</div>
+    </div>
+
+    <!-- continue for application -->
+    <div class="flex h-auto py-16 m-8 shadow-2xl">
+      <div class="flex-1 p-8">
+          <div class="text-5xl">Empowering learners of tomorrow</div>
+          <div class="text-gray-500 my-14">Over 2,300 students have completed this course and started working at their dream job, whats stopping you?</div>
+          <button class="w-5/6 p-4 mx-8 my-8 font-bold text-white bg-red-500 rounded">Continue Application<ion-icon name="arrow-forward-outline"></ion-icon></button>
+      </div>
+      <div class="flex-1 p-8 text-white bg-red-500">
+          <div class="text-5xl">How You Benefit From This Programme</div>
+          <ul class="my-14">
+              <li class="text-lg"><ion-icon name="checkmark-outline" size="large"></ion-icon>Executive PGP without quitting your job</li>
+              <li class="text-lg"><ion-icon name="checkmark-outline" size="large"></ion-icon>Cutting-edge curriculum designed by industry experts</li>
+              <li class="text-lg"><ion-icon name="checkmark-outline" size="large"></ion-icon>Alumni status from IIIT Bangalore</li>
+              <li class="text-lg"><ion-icon name="checkmark-outline" size="large"></ion-icon>Career transition with 58% average salary hike</li>
+          </ul>
+      </div>
+    </div>
+
+    <!-- student reviews -->
+    <div class="p-8 m-8 shadow-2xl">
+        <div class="text-4xl">Student Reviews</div>
+    <div class="flex m-4 overflow-x-scroll">
+        <div class="flex-none w-1/2 h-auto p-8 m-4 shadow-2xl">
+            <div class="flex">
+                <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/anirudh__1596721364307.jpeg" class="w-12 rounded-full"/>
+                <div class="mx-8">
+                    <div class="font-bold">Anirudh Sharma</div>
+                    <div class="text-sm">8 Years Experience . Analytics Manager,Essence</div>
+                </div>
+                <ion-icon name="logo-linkedin" class="text-blue-500"></ion-icon>
+                
+            </div>
+        <div class="my-4"><ion-icon name="bookmarks" class="text-red-500"></ion-icon>The Executive PGP-DS course from upGrad and IIT Bangalore has been a boom for me and it has helped enhance my skills in Excel,SQL,R,etc.</div>    
+        </div>
+
+        <div class="flex-none w-1/2 h-auto p-8 m-4 shadow-2xl">
+            <div class="flex">
+                <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/prabhakar__1596738294394.JPG" class="w-12 rounded-full"/>
+                <div class="mx-8">
+                    <div class="font-bold">Prabhakar</div>
+                    <div class="text-sm">10 Years Experience . Manager,Nokia Pvt.Ltd.</div>
+                </div>
+                <ion-icon name="logo-linkedin" class="text-blue-500"></ion-icon>
+            </div>
+        <div class="my-4"><ion-icon name="bookmarks" class="text-red-500"></ion-icon>It doesn't matter what your previous working background is, as everything is taught from the basics.</div>    
+        </div>
+
+        <div class="flex-none w-1/2 h-auto p-8 m-4 shadow-2xl">
+            <div class="flex">
+                <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/udit__1596737554227.jpg" class="w-12 rounded-full"/>
+                <div class="mx-8">
+                    <div class="font-bold">Udit Kumar</div>
+                    <div class="text-sm">7 Years Experience . Software support Analyst,Accenture</div>
+                </div>
+                <ion-icon name="logo-linkedin" class="text-blue-500"></ion-icon>
+            </div>
+        <div class="my-4"><ion-icon name="bookmarks" class="text-red-500"></ion-icon>Group case studies really give a sense of teamwork, as it happens in regular classroom studies. It teaches us coordination and right attitude as a team player in meeting all the deadlines.</div>    
+        </div>
+
+        <div class="flex-none w-1/2 h-auto p-8 m-4 shadow-2xl">
+            <div class="flex">
+                <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/new-images/profile-pictures/vibhor-srivastava.jpg" class="w-12 rounded-full"/>
+                <div class="mx-8">
+                    <div class="font-bold">Vibhor Srivastava</div>
+                    <div class="text-sm">4.5 Years Experience . Deputy Manager,ICICI Bank</div>
+                </div>
+                <ion-icon name="logo-linkedin" class="text-blue-500"></ion-icon>
+                
+            </div>
+        <div class="my-4"><ion-icon name="bookmarks" class="text-red-500"></ion-icon>The Executive PGP-DS course from upGrad and IIT Bangalore has been a boom for me and it has helped enhance my skills in Excel,SQL,R,etc.</div>    
+        </div>
+    </div>
+    </div>
+    <div class="container bg-gray-900 w-full mx-auto px-12">
+        <div>
+          <footer class="text-gray-400 bg-gray-900 body-font">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-wrap md:text-left text-center ">
+                <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                  <h2 class="title-font font-bold text-white tracking-widest text-3xl mb-4">UpGrad</h2>
+                  <h2 class="text-white text-sm mb-3">Building carrers of Tomorrow</h2>
+                  <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start mb-3">
+                    <a class="text-gray-400 hover:text-white">
+                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-3 text-white">
+                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-3 text-white">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-3 text-white">
+                      <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                      </svg>
+                    </a>
+                  </span>
+                  
+                </div>
+                <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                  <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">UPGRAD</h2>
+                  <nav class="list-none mb-10">
+                    <li>
+                      <a href="#" class="text-gray-400 hover:text-white">About</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-gray-400 hover:text-white">Careers</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-gray-400 hover:text-white">Placement Support</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-gray-400 hover:text-white">UpGrad Blog</a>
+                    </li>
+                  </nav>
+                </div>
+                
+                <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                  <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">ONEUPGRAD</h2>
+                  <nav class="list-none mb-10">
+                    <li>
+                      <a href="#" class="text-gray-400 hover:text-white">upGrad Rekrut</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-gray-400 hover:text-white">upGrad Jeet</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-gray-400 hover:text-white">upGrad Campus</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-gray-400 hover:text-white">Knowledgehut</a>
+                    </li>
+                  </nav>
+                </div>
+                <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                  <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">SUPPORT</h2>
+                  <nav class="list-none mb-10">
+                    <li>
+                      <a href="#" class="text-gray-400 hover:text-white">Contact</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-gray-400 hover:text-white">Terms & Conditions</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                    </li>
+                    
+                      
+                    
+                  </nav>
+                </div>
+                <div class="lg:w-1/6 md:w-1/2 mx-auto px-4 ">
+                  
+                    <button class="bg-gray-900 flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none  border border-light-gray-500 ">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 512 512">
+                        <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
+                      </svg>
+                      
+                        <span class=" ml-4 text-xs text-white mb-1">Get the android app</span>
+                        
+                      
+                    </button>
+                    <button class="bg-gray-900 inline-flex py-3 px-8 rounded-lg items-center hover:bg-gray-200 focus:outline-none border border-light-gray-500 mt-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 305 305">
+                        <path d="M40.74 112.12c-25.79 44.74-9.4 112.65 19.12 153.82C74.09 286.52 88.5 305 108.24 305c.37 0 .74 0 1.13-.02 9.27-.37 15.97-3.23 22.45-5.99 7.27-3.1 14.8-6.3 26.6-6.3 11.22 0 18.39 3.1 25.31 6.1 6.83 2.95 13.87 6 24.26 5.81 22.23-.41 35.88-20.35 47.92-37.94a168.18 168.18 0 0021-43l.09-.28a2.5 2.5 0 00-1.33-3.06l-.18-.08c-3.92-1.6-38.26-16.84-38.62-58.36-.34-33.74 25.76-51.6 31-54.84l.24-.15a2.5 2.5 0 00.7-3.51c-18-26.37-45.62-30.34-56.73-30.82a50.04 50.04 0 00-4.95-.24c-13.06 0-25.56 4.93-35.61 8.9-6.94 2.73-12.93 5.09-17.06 5.09-4.64 0-10.67-2.4-17.65-5.16-9.33-3.7-19.9-7.9-31.1-7.9l-.79.01c-26.03.38-50.62 15.27-64.18 38.86z"></path>
+                        <path d="M212.1 0c-15.76.64-34.67 10.35-45.97 23.58-9.6 11.13-19 29.68-16.52 48.38a2.5 2.5 0 002.29 2.17c1.06.08 2.15.12 3.23.12 15.41 0 32.04-8.52 43.4-22.25 11.94-14.5 17.99-33.1 16.16-49.77A2.52 2.52 0 00212.1 0z"></path>
+                      </svg>
+                      
+                        <span class=" ml-4 text-xs text-white mb-1">Get the iOS app </span>
+                        
+                      
+                    </button>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="border-t border-gray-800">
+             
+            
+              
+            </div>
+          </footer>
+        </div>
+        <footer class="text-gray-600 body-font">
+          <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+            
+            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+              <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">STUDY ABOARD</h2>
+                <nav class="list-none mb-10">
+                  <li>
+                    <a href="#" class="text-gray-400 hover:text-white">Data Science | Master's Degree</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-400 hover:text-white">Computer science | Master's Degree </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-400 hover:text-white">Business Administration (90 ECTS) | MBA</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-400 hover:text-white">International Management | Master's Degree</a>
+                  </li>
+                </nav>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">LAW</h2>
+                <nav class="list-none mb-10">
+                  <li>
+                    <a href="#" class="text-gray-400 hover:text-white">Jindal Global Law School(JGLS) | LL.M. </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-400 hover:text-white">Intellectual Property & Technology Law | LL.M.</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-400 hover:text-white">Dispute Resolution | LL.M.</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-400 hover:text-white">Law | UG & PG Courses </a>
+                  </li>
+                </nav>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">HEALTH</h2>
+                <nav class="list-none mb-10">
+                  <li>
+                    <a href="#" class="text-gray-400 hover:text-white">Healthcare Management | Executive PG Program...</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-400 hover:text-white">Health | UG & PG Courses</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-400 hover:text-white">Public Health | PG Courses </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-400 hover:text-white">Nursing | PG Courses</a>
+                  </li>
+                </nav>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CRIMINOLOGY & PYSCHOLOGY</h2>
+                <nav class="list-none mb-10">
+                  <li>
+                    <a class="text-gray-400 hover:text-white">Criminology | PG Courses</a>
+                  </li>
+                  <li>
+                    <a class="text-gray-400 hover:text-white">Pyschology | UG & Courses</a>
+                  </li>
+                  
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-900">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+              <p class="text-gray-500 text-sm text-center sm:text-left">© 2015-2021 upGrad Education Private Limited...
+              
+              </p>
+              
+            </div>
+          </div>
+        </footer>
+  
+      </div>
+    </div>
+    <div id="modal">
+
+        <!-- close button -->
+        <ion-icon name="close-outline" size="large" id="closebutton"></ion-icon>
+        
+        <!-- content inside modal -->
+        <div id="modalcontent">
+            <img src="../images/modal.png"/>
+            <div id="containing">
+                <!-- toggle checkbox -->
+                <input type="checkbox" class="toogle_input">
+                 <label for="toogle_input"></label>
+                <h2 class="content email_content">Enter email Id</h2>
+                <h2 class="content email_refercontent">Enter your email ID to get referral benefits</h2>
+                <input type="email" placeholder="johndoe@example.com" id="email_input"/>
+                <button id="continue_button">CONTINUE &nbsp<ion-icon name="arrow-forward-outline"></ion-icon></button>
+                <div id="phone_no">Proceed with Phone</div>
+                <h4>Have a Referral Code?</h4>
+            </div>   
+      </div>
+       <!-- modal end -->
+    <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+<script src="../scripts/mba.js"></script>
