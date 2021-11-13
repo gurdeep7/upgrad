@@ -1,6 +1,6 @@
 # UpGrad - Clone
 
->It is South Asia’s largest higher EdTech company. With the latest technology, pedagogy, industry partners and world-class faculty, we create immersive online learning experiences for our learners globally.
+>It is South Asia’s largest higher EdTech company. With the latest technology, pedagogy, industry partners and world-class faculty, They create immersive online learning experiences for our learners globally.
 
 ## Hosted Platform
 
@@ -11,7 +11,7 @@ https://gurdeep7.github.io/upgrad/html/index.html
 1. Gurdeep Singh
 2. Parag Raghunath Patil
 3. Deepesh
-4. Dinesh Kumar S
+4. Dinesh Kumar
 5. Kapish Singh
 6. Madhu Sudhanan
 
@@ -24,10 +24,11 @@ https://gurdeep7.github.io/upgrad/html/index.html
 ## Snapshot from the Built Project
 
 > <img src = "images/homePage.png" style="width:300px" alt = "Home Page" />  &emsp;
-> <img src = "images/CategoryPage.png" style="width:300px" alt = "Category Page" /> &emsp;
-> <img src = "images/CartPage.png" style="width:300px" alt = "Cart Page" /> &emsp;
+> <img src = "images/CoursePage.png" style="width:300px" alt = "Course Page" /> &emsp;
 > <img src = "images/loginPage.png" style="width:300px" alt = "Login Page" /> &emsp;
-> <img src = "images/registrationPage.png" style="width:300px" alt = "Registration PAge" /> &emsp;
-> <img src = "images/CheckoutPage.png" style="width:300px" alt = "Checkout Page" /> &emsp; 
+> <img src = "images/applicationPage.png" style="width:300px" alt = "Application Page" /> &emsp;
+> <img src = "images/reserveSeat.png" style="width:300px" alt = "Reserve Seat" /> &emsp; 
+> <img src = "images/paymentPage.png" style="width:300px" alt = "Payment Page" /> &emsp; 
+> <img src = "images/thankYou.png" style="width:300px" alt = "Thank You" /> &emsp; 
 
 
