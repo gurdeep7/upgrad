@@ -245,7 +245,7 @@ const courses=[
 {
     title : "Advanced Certificate in Digital MArketing and Communication",
     image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/programcard__1620048408643.png",
-    logo: "../images/MICA_logo.png",
+    logo: "../images/MICA_Logo.png",
     university: "MICA",
     category: "Marketing",
     Duration: 10,
@@ -255,7 +255,7 @@ const courses=[
 {
     title : "Advanced Certificate in Digital MArketing and Advertising",
     image: "https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/MICA__1619529914249.png",
-    logo: "../images/MICA_logo.png",
+    logo: "../images/MICA_Logo.png",
     university: "MICA",
     category: "Marketing",
     Duration: 8,
