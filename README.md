@@ -1,3 +1,4 @@
+
 # UpGrad - Clone
 
 >It is South Asia’s largest higher EdTech company. With the latest technology, pedagogy, industry partners and world-class faculty, They create immersive online learning experiences for our learners globally.
@@ -30,5 +31,6 @@ https://gurdeep7.github.io/upgrad/html/index.html
 > <img src = "images/reserveSeat.jpg" style="width:300px" alt = "Reserve Seat" /> &emsp; 
 > <img src = "images/paymentPage.jpg" style="width:300px" alt = "Payment Page" /> &emsp; 
 > <img src = "images/thankYou.jpg" style="width:300px" alt = "Thank You" /> &emsp; 
+
 
 
