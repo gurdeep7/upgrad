@@ -1,0 +1,61 @@
+.btn{
+    @apply py-2 px-4 font-semibold;
+}
+
+.btn-green {
+    @apply rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 3.5px 0;
+    text-transform: capitalize;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding-left: 10px;
+    padding-right: 70px;
+    margin: 3.5px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25%;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    color: rgb(255, 0, 0);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 4%;
+    padding: 10px;
+  }
