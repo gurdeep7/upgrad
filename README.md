@@ -23,8 +23,8 @@ https://gurdeep7.github.io/upgrad/html/index.html
 
 ## Snapshot from the Built Project
 
-> <img src = "images/homePage.jpg" style="width:300px" alt = "Home Page" />  &emsp;
-> <img src = "images/CoursePage.jpg" style="width:300px" alt = "Course Page" /> &emsp;
+> <img src = "images/homePage.png" style="width:300px" alt = "Home Page" />  &emsp;
+> <img src = "images/coursePage.jpg" style="width:300px" alt = "Course Page" /> &emsp;
 > <img src = "images/loginPage.jpg" style="width:300px" alt = "Login Page" /> &emsp;
 > <img src = "images/applicationPage.jpg" style="width:300px" alt = "Application Page" /> &emsp;
 > <img src = "images/reserveSeat.jpg" style="width:300px" alt = "Reserve Seat" /> &emsp; 
