@@ -23,12 +23,12 @@ https://gurdeep7.github.io/upgrad/html/index.html
 
 ## Snapshot from the Built Project
 
-> <img src = "images/homePage.png" style="width:300px" alt = "Home Page" />  &emsp;
-> <img src = "images/CoursePage.png" style="width:300px" alt = "Course Page" /> &emsp;
-> <img src = "images/loginPage.png" style="width:300px" alt = "Login Page" /> &emsp;
-> <img src = "images/applicationPage.png" style="width:300px" alt = "Application Page" /> &emsp;
-> <img src = "images/reserveSeat.png" style="width:300px" alt = "Reserve Seat" /> &emsp; 
-> <img src = "images/paymentPage.png" style="width:300px" alt = "Payment Page" /> &emsp; 
-> <img src = "images/thankYou.png" style="width:300px" alt = "Thank You" /> &emsp; 
+> <img src = "images/homePage.jpg" style="width:300px" alt = "Home Page" />  &emsp;
+> <img src = "images/CoursePage.jpg" style="width:300px" alt = "Course Page" /> &emsp;
+> <img src = "images/loginPage.jpg" style="width:300px" alt = "Login Page" /> &emsp;
+> <img src = "images/applicationPage.jpg" style="width:300px" alt = "Application Page" /> &emsp;
+> <img src = "images/reserveSeat.jpg" style="width:300px" alt = "Reserve Seat" /> &emsp; 
+> <img src = "images/paymentPage.jpg" style="width:300px" alt = "Payment Page" /> &emsp; 
+> <img src = "images/thankYou.jpg" style="width:300px" alt = "Thank You" /> &emsp; 
 
 
