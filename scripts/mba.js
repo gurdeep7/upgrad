@@ -24,6 +24,7 @@ function showjoint()
 {
     showExecutive.style.display="none";
     showParticipation.style.display="block";
+    
 }
 
 //calling scroll button id
