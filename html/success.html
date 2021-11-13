@@ -31,7 +31,7 @@
     <div>
         <h2 class="text-center mt-12 font-bold text-xl text-upgrad-blue m-auto">Your Profile is a 100% match for</h2>
         <br>
-        <h2 class="text-center mt-12 font-bold text-2xl text-upgrad-blue m-auto">Data Analytics certificate program</h2>
+        <h2 class="text-center mt-12 font-bold text-2xl text-upgrad-blue m-auto" id= "course">Data Analytics certificate program</h2>
         <br>
         <h6  class="text-center mt-12 text-lg text-upgrad-blue">Admission Process:</h6>
     </div>
@@ -63,3 +63,7 @@
 </body>
 </html>
 <script src="../scripts/userDetails.js"></script>
+<script>
+    let course = document.getElementById("course")
+    course.textContent = details.course;
+</script>
