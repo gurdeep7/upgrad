@@ -5,7 +5,7 @@
 
 ## Hosted Platform
 
-https://gurdeep7.github.io/upgrad/html/index.html
+https://paragpatil187.github.io/upgrad/html/index.html
 
 ## Contributors
 
