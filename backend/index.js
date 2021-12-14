@@ -8,4 +8,7 @@ app.use(express.json())
 
 app.use("/course", courseController)
 
+app.get("/",(req,res)=>{
+    res.send("hello world")
+})
 module.exports = app
