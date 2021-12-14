@@ -4,9 +4,9 @@ const courses = require("../models/courses.model")
 
 const router = express.Router()
 
-router.post("/",(req,res)=>{
+router.post("/",async(req,res)=>{
    try {
-        const Course = courses.create(req.body)
+        const Course =await courses.create(req.body)
 
     res.status(200).send(Course)
 }catch(e){
@@ -14,10 +14,10 @@ router.post("/",(req,res)=>{
     res.status(500).json({status:e.message})
 }
 })
-router.get("",(req,res)=>{
+router.get("",async(req,res)=>{
     console.log("work")
     try{
-        const Course = courses.find().lean().exec()
+        const Course =await courses.find().lean().exec()
         res.status(201).send(Course)
     }catch(e){
         res.status(500).json({status:e.message})
