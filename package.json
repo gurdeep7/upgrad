@@ -5,9 +5,13 @@
   "main": "index.js",
   "scripts": {
     "build": "tailwindcss build ./style/src.css  -o  ./tailwind/tailwind.css",
-    "prod": "NODE_ENV=production npx tailwindcss build ./style/src.css  -o  ./tailwind/tailwind.css"
+    "prod": "NODE_ENV=production npx tailwindcss build ./style/src.css  -o  ./tailwind/tailwind.css",
+    "start": "nodemon ./backend/server.js"
   },
   "author": "",
+  "engines":{
+    "node": "v16.13.0"
+  },
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
