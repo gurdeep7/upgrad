@@ -3,9 +3,11 @@ var requestOptions = {
     redirect: 'follow'
   };
   var courses;
-fetch("http://localhost:2346/course", requestOptions)
+fetch("http://localhost:3000/course", requestOptions)
 .then(response => response.json())
-.then(result => courses= result)
+.then(result => {courses= result
+    showgrid("Management");
+})
 .catch(error => console.log('error', error));
 
 var sidedropdown = document.getElementById("sidedropdown")
@@ -112,9 +114,8 @@ function showongrid(data){
 
     });
 }
-setTimeout(() => {
-    showgrid("Management");
-}, 1000);
+
+
 
 // slideshow start
 var swiper = new Swiper(".mySwiper", {
