@@ -3,7 +3,7 @@ var requestOptions = {
     redirect: 'follow'
   };
   var courses;
-fetch("http://localhost:3000/course", requestOptions)
+fetch("https://upgrad78.herokuapp.com/course", requestOptions)
 .then(response => response.json())
 .then(result => {courses= result
     showgrid("Management");
