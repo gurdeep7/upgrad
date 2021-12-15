@@ -4,6 +4,7 @@ const userCourseDetail = require("../models/userCourseDetail.model")
 
 const router = express.Router()
 
+//CREATE OPERATION
 router.post("/",async(req,res)=>{
    try {
         const UserCourseDetail =await userCourseDetail.create(req.body)
@@ -14,6 +15,7 @@ router.post("/",async(req,res)=>{
     res.status(500).json({status:e.message})
 }
 })
+//GET ALL OPERATION
 router.get("/",async(req,res)=>{
     try{
         const UserCourseDetails =await userCourseDetail.find().populate('user_id').populate('checkIncourse_id').lean().exec()
@@ -22,6 +24,7 @@ router.get("/",async(req,res)=>{
         res.status(500).json({status:e.message})
     }
 })
+//GET BY ID OPERATION
 router.get("/:id", async (req, res)=>{
     try {
         const UserCourseDetail = await userCourseDetail.findById(req.params.id).populate('user_id').populate('checkIncourse_id').lean().exec();
@@ -31,6 +34,7 @@ router.get("/:id", async (req, res)=>{
         return res.status(500).json({message, status: "Failed"});
     }
 });
+//DELETE OPERATION
 router.delete("/:id", async (req, res)=>{
     try {
         const UserCourseDetail = await userCourseDetail.findByIdAndDelete(req.params.id).lean().exec();
