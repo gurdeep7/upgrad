@@ -1,3 +1,4 @@
+//using personsl data for checking
 const express = require("express")
 
 const Checkout = require("../models/checkout.model")
