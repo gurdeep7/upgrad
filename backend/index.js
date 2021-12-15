@@ -12,6 +12,7 @@ app.use(cors())
 app.use(express.json())
 
 app.use("/course", courseController);
+//USER COURSE DETAIL API
 app.use("/userCourseDetail", userCourseDetailController);
 
 app.get("/",(req,res)=>{
