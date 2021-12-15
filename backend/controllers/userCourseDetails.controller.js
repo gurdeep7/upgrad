@@ -14,7 +14,7 @@ router.post("/",async(req,res)=>{
     res.status(500).json({status:e.message})
 }
 })
-router.get("",async(req,res)=>{
+router.get("/",async(req,res)=>{
     try{
         const UserCourseDetails =await userCourseDetail.find().populate('user_id').populate('checkIncourse_id').lean().exec()
         res.status(201).send(UserCourseDetails)
@@ -27,6 +27,15 @@ router.get("/:id", async (req, res)=>{
         const UserCourseDetail = await userCourseDetail.findById(req.params.id).populate('user_id').populate('checkIncourse_id').lean().exec();
 
         return res.send(UserCourseDetail);
+    } catch(e){
+        return res.status(500).json({message, status: "Failed"});
+    }
+});
+router.delete("/:id", async (req, res)=>{
+    try {
+        const UserCourseDetail = await userCourseDetail.findByIdAndDelete(req.params.id).lean().exec();
+
+        return res.status(201).send(UserCourseDetail);
     } catch(e){
         return res.status(500).json({message, status: "Failed"});
     }
