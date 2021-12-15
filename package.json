@@ -9,11 +9,12 @@
     "start": "nodemon ./backend/server.js"
   },
   "author": "",
-  "engines":{
+  "engines": {
     "node": "v16.13.0"
   },
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^6.1.1",
     "tailwindcss": "^2.2.19"
