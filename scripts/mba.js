@@ -40,7 +40,7 @@ const btnScrollToTop=document.querySelector("#btnScrollToTop");
     });
 
     var requestOptions = {
-        method: 'GET',
+        method : "GET",
         redirect: 'follow'
       };
       var courses;

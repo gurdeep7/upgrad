@@ -1,5 +1,5 @@
 var requestOptions = {
-    method: 'GET',
+    method : "GET",
     redirect: 'follow'
   };
   var courses;

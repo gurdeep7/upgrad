@@ -39,14 +39,14 @@ const btnScrollToTop=document.querySelector("#btnScrollToTop");
     });
 
     var requestOptions = {
-        method: 'GET',
+        method : "GET",
         redirect: 'follow'
       };
       var courses;
     fetch("https://upgrad78.herokuapp.com/course", requestOptions)
     .then(response => response.json())
-    .then(result => {courses= result
-    })
+    .then(result => {courses= result})
+    .catch(error =>{console.log(error)})
 var sidedropdown = document.getElementById("sidedropdown")
 function showcourse(value){
     let data = courses.filter(el => el.category == value)
