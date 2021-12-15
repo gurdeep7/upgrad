@@ -1,5 +1,6 @@
 const mongoose = require("mongoose")
 
+//CREATING USER'S COURSE DETAIL SCHEMA
 const userCourseDetailSchema = new mongoose.Schema({
     gender:{ type:String, required:true },
     city:{ type:String, required:true },
