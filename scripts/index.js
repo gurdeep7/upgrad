@@ -201,12 +201,10 @@ async function checkBackendEmail(){
     let email11 =await fetch(`https://upgrad78.herokuapp.com/check/${email_input}`)
     let email1 = await  email11.json()
   
- if(email1.status == "passed"){
-flag = true;
-    }
+ 
     localStorage.setItem("email",JSON.stringify(email_input));
-        if(email_input=""){
-            if(flag==true)
+        if(email1 != undefined){
+            if(email1.status == "passed")
             {
                 alert("already registered");
 
