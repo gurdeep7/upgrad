@@ -213,7 +213,7 @@ flag = true;
                 let containing=document.getElementById("containing");
                 containing.innerHTML=null;
                 let div=document.createElement("h2");
-                div.textContent="Enter the code sent to your phone and email";
+                div.textContent="Enter the code sent to your email";
                 let inputotp=document.createElement("input");
                 inputotp.setAttribute("id","email_input");
                 inputotp.placeholder="Enter 4 digit OTP";
