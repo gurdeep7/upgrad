@@ -56,9 +56,10 @@ const login = async (req, res) => {
 };
 const check = async(req,res) =>{
     try{ 
+      console.log(req.query.email)
         let user = await User.findOne({ email: req.params.email });
     if (!user)
-    return res.status(400).json({
+    return res.status(201).json({
       status: "failed",
       message: " Email not valid",
     });

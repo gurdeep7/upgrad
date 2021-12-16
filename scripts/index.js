@@ -199,12 +199,13 @@ function continuebutton(){
           checkBackendEmail()
 async function checkBackendEmail(){
     let email11 =await fetch(`https://upgrad78.herokuapp.com/check/${email_input}`)
-    let email1 = await email11.json()
-    if(email1.status == "passed"){
+    let email1 = await  email11.json()
+  
+ if(email1.status == "passed"){
 flag = true;
     }
-
-        if(email_input.value!=""){
+    localStorage.setItem("email",JSON.stringify(email_input));
+        if(email_input=""){
             if(flag==true)
             {
                 alert("already registered");
