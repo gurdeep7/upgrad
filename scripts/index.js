@@ -189,18 +189,21 @@ let email_input=document.getElementById("email_input");
 //adding user data in local storage
 function continuebutton(){
     
-        let user_datas=JSON.parse(localStorage.getItem("User_data"));
+        
         
         let flag=false;
-        if(user_datas!=null){
+       
+          email_input = email_input.value
+          console.log(email_input)
+          
+          checkBackendEmail()
+async function checkBackendEmail(){
+    let email11 =await fetch(`http://localhost:3000/check/${email_input}`)
+    let email1 = await email11.json()
+    if(email1.status == "passed"){
+flag = true;
+    }
 
-            user_datas.forEach(({email})=>{
-                if(email_input.value==email){
-                    flag=true;
-                    
-                }
-            });
-        }
         if(email_input.value!=""){
             if(flag==true)
             {
@@ -254,6 +257,7 @@ function continuebutton(){
         }
 }
 }
+}
 function forward(){
     window.location.href="index.html";
 }
@@ -292,6 +296,7 @@ function validatemobile(mobile,name) {
     continue_button.style.backgroundColor = "gray"
    }
 }
+
 
 //Login Check
 var details = JSON.parse(localStorage.getItem("User_data"))
