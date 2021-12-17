@@ -240,7 +240,7 @@ async function checkBackendEmail(){
                 var raw = JSON.stringify(user_datas)
                 fetchuserid()
                 async function fetchuserid(){
-                    let user = await fetch("http://localhost:3000/register",
+                    let user = await fetch("https://upgrad78.herokuapp.com/register",
                     {
                         method:"POST",
                         headers:{'Content-Type': 'application/json'},
@@ -266,13 +266,22 @@ function askotp()
                 inputotp.setAttribute("id","email_input");
                 inputotp.placeholder="Enter 4 digit OTP";
                 inputotp.type="password";
+                inputotp.oninput = ()=>{
+                    if(inputotp.value.length != 4){
+                        continue_button.style.backgroundColor = "gray"
+                        continue_button.disabled = true;
+                    }else{
+                        continue_button.style.backgroundColor = "red"
+                        continue_button.disabled = false;
+                    }
+                }
                 let continue_button=document.createElement("button");
                 continue_button.innerHTML="Continue";
                 continue_button.setAttribute("id","continue_button");
                 containing.append(div,inputotp,continue_button);
                 continue_button.onclick=async function(){
                     let user_id= JSON.parse(localStorage.getItem("user_id"))
-                    let user =await fetch(`https://upgrad78.herokuapp.com/${user_id}/${inputotp.value}`)
+                    let user =await fetch(`https://upgrad78.herokuapp.com/check/${user_id}/${inputotp.value}`)
                     let user1 = await user.json()
                     console.log(user1.status)
                     if(user1.status == "passed"){

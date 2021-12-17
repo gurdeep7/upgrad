@@ -159,72 +159,111 @@ let email_input=document.getElementById("email_input");
         email_input.addEventListener("input",validatemail)
 //adding user data in local storage
 function continuebutton(){
-    
-        let user_datas=JSON.parse(localStorage.getItem("User_data"));
-        
-        let flag=false;
-        if(user_datas!=null){
+       
+          
+          
+    checkBackendEmail()
+async function checkBackendEmail(){
+let email11 =await fetch(`https://upgrad78.herokuapp.com/check/${email_input.value}`)
+let email1 = await  email11.json()
+console.log(email1)
 
-            user_datas.forEach(({email})=>{
-                if(email_input.value==email){
-                    flag=true;
-                    
-                }
-            });
-        }
-        if(email_input.value!=""){
-            if(flag==true)
-            {
-                alert("already registered");
+localStorage.setItem("email",JSON.stringify(email_input));
+  if(email1 != undefined){
+      if(email1.status == "passed")
+      {
+      
+          alert("already registered");
+          localStorage.setItem("user_id",JSON.stringify(email1.user_id));
+          askotp()
+           //appending otp for taking checking user
+           
 
-                 //appending otp for taking checking user
-                let containing=document.getElementById("containing");
-                containing.innerHTML=null;
-                let div=document.createElement("h2");
-                div.textContent="Enter the code sent to your phone and email";
-                let inputotp=document.createElement("input");
-                inputotp.setAttribute("id","email_input");
-                inputotp.placeholder="Enter 4 digit OTP";
-                inputotp.type="password";
-                let continue_button=document.createElement("button");
-                continue_button.innerHTML="Continue";
-                continue_button.setAttribute("id","continue_button");
-                containing.append(div,inputotp,continue_button);
-                continue_button.onclick=function(){forward();}
-            }
-            else{
-              
-
-               //appending details for taking user details
-               let containing=document.getElementById("containing");
-               containing.innerHTML=null;
-               let div=document.createElement("h2");
-               div.textContent="Enter Your Details";
-               let inputname=document.createElement("input");
-               inputname.setAttribute("id","email_input");
-               inputname.placeholder="Enter your name";
-               let inputmobile=document.createElement("input");
-               inputmobile.type = "number"
-               inputmobile.setAttribute("id","mobile_input");
-               inputmobile.oninput=()=> validatemobile(inputmobile.value,inputname.value)
-               inputmobile.placeholder="Enter your mobile no.";
-               let continue_button=document.createElement("button");
-               continue_button.innerHTML="Continue";
-               
-               continue_button.setAttribute("id","continue_button");
-               containing.append(div,inputname,inputmobile,continue_button);
-               continue_button.onclick=function(){
-                let user_datas={
-                    email:email_input.value,
-                    name: inputname.value,
-                    mobile: inputmobile.value
-                };
-                localStorage.setItem("User_data",JSON.stringify(user_datas));
-                forward();}    
-               
-        }
+      }
+      
+      else{
+         
+         //appending details for taking user details
+         let containing=document.getElementById("containing");
+         containing.innerHTML=null;
+         let div=document.createElement("h2");
+         div.textContent="Enter Your Details";
+         let inputname=document.createElement("input");
+         inputname.setAttribute("id","email_input");
+         inputname.placeholder="Enter your name";
+         let inputmobile=document.createElement("input");
+         inputmobile.type = "number"
+         inputmobile.setAttribute("id","mobile_input");
+         inputmobile.oninput=()=> validatemobile(inputmobile.value,inputname.value)
+         inputmobile.placeholder="Enter your mobile no.";
+         let continue_button=document.createElement("button");
+         continue_button.innerHTML="Continue";
+         
+         continue_button.setAttribute("id","continue_button");
+         containing.append(div,inputname,inputmobile,continue_button);
+         continue_button.onclick=function(){
+          let user_datas={
+              email:email_input.value,
+              name: inputname.value,
+              mobile_number: inputmobile.value
+          };
+          var raw = JSON.stringify(user_datas)
+          fetchuserid()
+          async function fetchuserid(){
+              let user = await fetch("https://upgrad78.herokuapp.com/register",
+              {
+                  method:"POST",
+                  headers:{'Content-Type': 'application/json'},
+                  body:raw,
+              })
+              let user1 = await user.json()
+              localStorage.setItem("user_id",JSON.stringify(user1.user_id));
+          }
+          askotp()
+          //forward();
+      }  
+  }  
+         
+  }
 }
 }
+function askotp()
+        {  let containing=document.getElementById("containing");
+          containing.innerHTML=null;
+          let div=document.createElement("h2");
+          div.textContent="Enter the code sent to your email";
+          let inputotp=document.createElement("input");
+          inputotp.setAttribute("id","email_input");
+          inputotp.placeholder="Enter 4 digit OTP";
+          inputotp.type="password";
+          inputotp.oninput = ()=>{
+              if(inputotp.value.length != 4){
+                  continue_button.style.backgroundColor = "gray"
+                  continue_button.disabled = true;
+              }else{
+                  continue_button.style.backgroundColor = "red"
+                  continue_button.disabled = false;
+              }
+          }
+          let continue_button=document.createElement("button");
+          continue_button.innerHTML="Continue";
+          continue_button.setAttribute("id","continue_button");
+          containing.append(div,inputotp,continue_button);
+          continue_button.onclick=async function(){
+              let user_id= JSON.parse(localStorage.getItem("user_id"))
+              let user =await fetch(`https://upgrad78.herokuapp.com/check/${user_id}/${inputotp.value}`)
+              let user1 = await user.json()
+              console.log(user1.status)
+              if(user1.status == "passed"){
+                  localStorage.setItem("User_data",JSON.stringify(user1))
+                 forward()
+              }
+              else{
+                  alert("Wrong OTP")
+                  return
+              }
+          }
+      }
 function forward(){
     window.location.reload();
 }
