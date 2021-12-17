@@ -7,7 +7,7 @@ const courseSchema = new mongoose.Schema({
     university:{type:String, required:true},
     category:{type:String , required:true},
     duration:{type:Number, required:true},
-    linke:{type:String, required:false, default:"#"},
+    link:{type:String, required:false, default:"#"},
     offer:{type:String, required:false}
 },{
     versionKey:false,

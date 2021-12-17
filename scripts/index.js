@@ -20,11 +20,12 @@ function showcourse(value){
 async function showondrop(data){
     sidedropdown.innerHTML = null;
 
-   await data.forEach(({title,logo,Duration,university,link,offer}) => {
+   await data.forEach(({_id,title,logo,Duration,university,link,offer}) => {
         let div = document.createElement("div")
         div.style.margin = "20px"
         div.onclick = ()=>{
-            window.location.href = link;
+            localStorage.setItem("course_id",(JSON.stringify(_id))),
+            window.location.href = link
         }
         div.setAttribute("class","border-black border-2 rounded-lg flex hover:border-gs-red hover:bg-gray-100 ")
         let img = document.createElement("img")
@@ -86,6 +87,7 @@ function showongrid(data){
     data.forEach(({title,logo,Duration,university,link,offer,image}) => {
         let div = document.createElement("div")
         div.onclick = ()=>{
+
             window.location.href = link;
         }
         div.setAttribute("class","border-2 border-gray-300 cursor-pointer shadow-xl rounded-2xl m-3")

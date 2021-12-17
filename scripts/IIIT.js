@@ -60,6 +60,7 @@ function showcourse(value){
         let div = document.createElement("div")
         div.style.margin = "20px"
         div.onclick = ()=>{
+            localStorage.setItem("course_id",(JSON.stringify(_id))),
             window.location.href = link;
         }
         div.setAttribute("class","border-black border-2 rounded-lg flex hover:border-gs-red hover:bg-gray-100 ")
@@ -311,13 +312,30 @@ button1.setAttribute("class","p-2 rounded text-gray-600 absolute right-2")
 button1.innerHTML =`<span class="material-icons" style="margin-top: 8px;">account_circle</span><span class="relative -top-2"> ${details.name.substring(0,7)}...</span>`
 flag = 1;
 }
-function screen(){
+async function screen(){
     if(flag == 0){
         modal.style.display="block";
     }else{
+        let user_id = JSON.parse(localStorage.getItem("user_id"))
+        let course_id = JSON.parse(localStorage.getItem("course_id"))
+        let raw1 = {user_id,
+        course_id}
+        raw1 = JSON.stringify(raw1)
+       
+       
+        let user11 = await fetch("https://upgrad78.herokuapp.com/checkin",
+                    {
+                        method:"POST",
+                        headers:{'Content-Type': 'application/json'},
+                        body:raw1,
+                    })
+                
+          let user1 = await user11.json()
+        if(user1.status == "passed"){
         details.fees = 299000;
         details.course = "Executive PG Programme in Data Science";
         localStorage.setItem("User_data",JSON.stringify(details))
         window.location.href="screening.html"
+        }
     }
 }
