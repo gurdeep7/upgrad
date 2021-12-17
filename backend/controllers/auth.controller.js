@@ -63,7 +63,7 @@ const verifyotp = async(req,res)=>{
     
     let user = await User.findById(req.params.id).lean().exec()
     const token = newToken(user);
-    return res.status(201).json({status:"passed", name:user.name,email:user.email,mobile:user.mobile,user:user.name, token });
+    return res.status(201).json({status:"passed", name:user.name,email:user.email,mobile:user.mobile_number,user:user.name, token });
   }catch(e){
    return res.status(500).json({status:"failed"})
   }
