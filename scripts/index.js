@@ -190,12 +190,11 @@ let email_input=document.getElementById("email_input");
 //adding user data in local storage
 function continuebutton(){
        
-          email_input = email_input.value
-          console.log(email_input)
+          
           
           checkBackendEmail()
 async function checkBackendEmail(){
-    let email11 =await fetch(`https://upgrad78.herokuapp.com/${email_input}`)
+    let email11 =await fetch(`https://upgrad78.herokuapp.com/check/${email_input.value}`)
     let email1 = await  email11.json()
   console.log(email1)
  
@@ -234,7 +233,7 @@ async function checkBackendEmail(){
                containing.append(div,inputname,inputmobile,continue_button);
                continue_button.onclick=function(){
                 let user_datas={
-                    email:email_input,
+                    email:email_input.value,
                     name: inputname.value,
                     mobile_number: inputmobile.value
                 };
