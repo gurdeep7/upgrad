@@ -5,11 +5,12 @@ const { body, validationResult } = require('express-validator');
 
 const courseController = require("./controllers/courses.controller")
 
-const { register, login, check } = require("./controllers/auth.controller");
+const { register, login, check, verifyotp } = require("./controllers/auth.controller");
 //const recruitController = require("./controllers/recruit.controller");
 //const screeningController = require("./controllers/screening.controller");
 
-const cors = require("cors")
+const cors = require("cors");
+const { verify } = require("./configs/mail");
 
 app.use(cors())
 
@@ -23,4 +24,5 @@ app.get("/check/:email",check)
 app.get("/",(req,res)=>{
     res.send("We are upgrad")
 })
+app.get("/check/:id/:otp",verifyotp)
 module.exports = app
