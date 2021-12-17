@@ -19,7 +19,6 @@ app.use(express.json())
 app.use("/course", courseController)
 
 app.post("/register", register);
-app.post("/login", login); // till not in use
 app.get("/check/:email",check)
 app.get("/",(req,res)=>{
     res.send("We are upgrad")

@@ -38,28 +38,6 @@ const register = async (req, res) => {
   }
 }
 
-const login = async (req, res) => {
-  try {
-    let user = await User.findOne({ email: req.body.email });
-    if (!user)
-      return res.status(400).json({
-        status: "failed",
-        message: " Please provide correct email address and password",
-      });
-    const match = await user.checkPassword(req.body.password);
-
-    if (!match)
-      return res.status(400).json({
-        status: "failed",
-        message: " Please provide correct email address and password",
-      });
-      
-      const token = newToken(user);
-    res.status(201).json({status:"passed", name:user.name,email:user.email, token });
-  } catch (e) {
-    return res.status(500).json({ status: "failed", message: e.message });
-  }
-};
 const check = async(req,res) =>{
     try{ 
       generate()
@@ -85,7 +63,7 @@ const verifyotp = async(req,res)=>{
     
     let user = await User.findById(req.params.id).lean().exec()
     const token = newToken(user);
-    return res.status(201).json({status:"passed", name:user.name,email:user.email,user:user.name, token });
+    return res.status(201).json({status:"passed", name:user.name,email:user.email,mobile:user.mobile,user:user.name, token });
   }catch(e){
    return res.status(500).json({status:"failed"})
   }
