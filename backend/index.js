@@ -5,7 +5,7 @@ const { body, validationResult } = require('express-validator');
 
 const courseController = require("./controllers/courses.controller")
 
-const { register, login, check, verifyotp } = require("./controllers/auth.controller");
+const { register, check, verifyotp } = require("./controllers/auth.controller");
 //const recruitController = require("./controllers/recruit.controller");
 //const screeningController = require("./controllers/screening.controller");
 
