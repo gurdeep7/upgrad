@@ -70,4 +70,4 @@ const verifyotp = async(req,res)=>{
 
 }
 
-module.exports = { register, login, check ,verifyotp};
+module.exports = { register,  check ,verifyotp};
