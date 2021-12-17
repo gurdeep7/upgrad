@@ -1,19 +1,18 @@
 const bcrypt = require("bcryptjs");
 const { Schema, model } = require("mongoose");
-
+var ran = Math.floor(1000 + Math.random() * 9000);
 const userSchema = new Schema(
   {
     email: { type: String, required: true, unique: true },
     name: { type: String, required: true },
-    mobile_number: { type: Number, required: true, length: 10 },
-    password: { type: String, required: true },
+    mobile_number: { type: Number, required: true, length: 10 }
   },
   {
     versionKey: false,
     timestamps: true,
+    
   }
 );
-
 userSchema.pre("save", function (next) {
   var val = Math.floor(1000 + Math.random() * 9000);
   // this is for generating random password if needed

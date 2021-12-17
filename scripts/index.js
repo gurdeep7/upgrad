@@ -1,3 +1,4 @@
+
 var requestOptions = {
     method : "GET",
     redirect: 'follow'
@@ -188,46 +189,31 @@ let email_input=document.getElementById("email_input");
         email_input.addEventListener("input",validatemail)
 //adding user data in local storage
 function continuebutton(){
-    
-        
-        
-        let flag=false;
        
           email_input = email_input.value
           console.log(email_input)
           
           checkBackendEmail()
 async function checkBackendEmail(){
-    let email11 =await fetch(`https://upgrad78.herokuapp.com/check/${email_input}`)
+    let email11 =await fetch(`https://upgrad78.herokuapp.com/${email_input}`)
     let email1 = await  email11.json()
-  
- if(email1.status == "passed"){
-flag = true;
-    }
+  console.log(email1)
+ 
     localStorage.setItem("email",JSON.stringify(email_input));
-        if(email_input=""){
-            if(flag==true)
+        if(email1 != undefined){
+            if(email1.status == "passed")
             {
+            
                 alert("already registered");
-
+                localStorage.setItem("user_id",JSON.stringify(email1.user_id));
+                askotp()
                  //appending otp for taking checking user
-                let containing=document.getElementById("containing");
-                containing.innerHTML=null;
-                let div=document.createElement("h2");
-                div.textContent="Enter the code sent to your email";
-                let inputotp=document.createElement("input");
-                inputotp.setAttribute("id","email_input");
-                inputotp.placeholder="Enter 4 digit OTP";
-                inputotp.type="password";
-                let continue_button=document.createElement("button");
-                continue_button.innerHTML="Continue";
-                continue_button.setAttribute("id","continue_button");
-                containing.append(div,inputotp,continue_button);
-                continue_button.onclick=function(){forward();}
-            }
-            else{
-              
+                 
 
+            }
+            
+            else{
+               
                //appending details for taking user details
                let containing=document.getElementById("containing");
                containing.innerHTML=null;
@@ -248,17 +234,58 @@ flag = true;
                containing.append(div,inputname,inputmobile,continue_button);
                continue_button.onclick=function(){
                 let user_datas={
-                    email:email_input.value,
+                    email:email_input,
                     name: inputname.value,
-                    mobile: inputmobile.value
+                    mobile_number: inputmobile.value
                 };
-                localStorage.setItem("User_data",JSON.stringify(user_datas));
-                forward();}    
+                var raw = JSON.stringify(user_datas)
+                fetchuserid()
+                async function fetchuserid(){
+                    let user = await fetch("http://localhost:3000/register",
+                    {
+                        method:"POST",
+                        headers:{'Content-Type': 'application/json'},
+                        body:raw,
+                    })
+                    let user1 = await user.json()
+                    localStorage.setItem("user_id",JSON.stringify(user1.user_id));
+                }
+                askotp()
+                //forward();
+            }  
+        }  
                
         }
 }
 }
-}
+function askotp()
+              {  let containing=document.getElementById("containing");
+                containing.innerHTML=null;
+                let div=document.createElement("h2");
+                div.textContent="Enter the code sent to your email";
+                let inputotp=document.createElement("input");
+                inputotp.setAttribute("id","email_input");
+                inputotp.placeholder="Enter 4 digit OTP";
+                inputotp.type="password";
+                let continue_button=document.createElement("button");
+                continue_button.innerHTML="Continue";
+                continue_button.setAttribute("id","continue_button");
+                containing.append(div,inputotp,continue_button);
+                continue_button.onclick=async function(){
+                    let user_id= JSON.parse(localStorage.getItem("user_id"))
+                    let user =await fetch(`https://upgrad78.herokuapp.com/${user_id}/${inputotp.value}`)
+                    let user1 = await user.json()
+                    console.log(user1.status)
+                    if(user1.status == "passed"){
+                        localStorage.setItem("User_data",JSON.stringify(user1))
+                       forward()
+                    }
+                    else{
+                        alert("Wrong OTP")
+                        return
+                    }
+                }
+            }
 function forward(){
     window.location.href="index.html";
 }
