@@ -1,19 +1,20 @@
 
 var user_id = JSON.parse(localStorage.getItem("user_id"))
+var checkIncourse_id = JSON.parse(localStorage.getItem("checkIncourse_id"))
+
 //console.log(user_id)
 var details = JSON.parse(localStorage.getItem("User_data"))
 var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
 
 var raw = JSON.stringify({
-  "user_id": user_id,//get userid from localstorage
-  "checkIncourse_id": 
-    "61b86570dd5eb249ad475bb7"//get courseid from localstorage na yet
+  "user_id": user_id,//get userid from localstorage//done
+  "checkIncourse_id": checkIncourse_id//get courseid from localstorage na yet//done after providing id
 });
 
 var requestOptions = {
   method: 'POST',
-  headers: myHeaders,//post user with course on checkout data
+  headers: myHeaders,//post user with course on checkout data//done data stored in database as checkout required to send email of this detail
   body: raw,
   redirect: 'follow'
 };
