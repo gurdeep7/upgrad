@@ -1,4 +1,7 @@
 const express = require("express")
+const send_sms = require("../config/sms");
+
+////npm install fast-two-sms --save
 
 const userCourseDetail = require("../models/userCourseDetails.model")
 
@@ -19,6 +22,7 @@ router.post("/",async(req,res)=>{
 router.get("/",async(req,res)=>{
     try{
         const UserCourseDetails =await userCourseDetail.find().populate('user_id').populate('checkIncourse_id').lean().exec()
+        send_sms(1234,9936742091);
         res.status(201).send(UserCourseDetails)
     }catch(e){
         res.status(500).json({status:e.message})
