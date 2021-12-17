@@ -234,7 +234,7 @@ function askotp()
         {  let containing=document.getElementById("containing");
           containing.innerHTML=null;
           let div=document.createElement("h2");
-          div.textContent="Enter the code sent to your email";
+          div.textContent="Enter the code sent to your Mobile";
           let inputotp=document.createElement("input");
           inputotp.setAttribute("id","email_input");
           inputotp.placeholder="Enter 4 digit OTP";

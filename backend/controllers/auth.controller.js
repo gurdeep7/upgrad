@@ -2,6 +2,7 @@ require("dotenv").config();
 const jwt = require("jsonwebtoken");
 const sendMail = require("../utils/sendmail");
 const User = require("../models/user.model");
+const send_sms = require("../configs/sms");
 var otp;
 function generate(){
 otp=  Math.floor(1000 + Math.random() * 9000);
@@ -32,6 +33,7 @@ const register = async (req, res) => {
     //   `<h1>Hi ${user.name}, You Are Just Logged in <h1>`
     // );
     const token = newToken(user);
+    send_sms(`Your otp is ${otp}`,user.mobile_number)
     res.status(201).json({status:"passed", user_id:user._id,otp });
   } catch (e) {
     return res.status(500).json({ status: "failed", message: e.message});
@@ -48,6 +50,7 @@ const check = async(req,res) =>{
       status: "failed",
       message: " Email not valid",
     });
+    send_sms(`Your otp is ${otp}`,user.mobile_number)
     res.status(201).json({status:"passed",user_id:user._id,otp: otp});
 }catch(e){
     return res.status(500).json({ status: "failed", message: e.message });

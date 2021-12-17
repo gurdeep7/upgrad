@@ -26,6 +26,5 @@ app.get("/",(req,res)=>{
 })
 app.get("/check/:id/:otp",verifyotp)
 
-app.use("/checkin", checkinController)
 
 module.exports = app
