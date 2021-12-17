@@ -72,7 +72,7 @@ g_no.addEventListener("click",()=>{
 
 function myFunction() {
     if(gen_flag == 0){
-        alert("Please selsct your gender")
+        alert("Please select your gender")
         return
     }
     if(g_flag == 0){
