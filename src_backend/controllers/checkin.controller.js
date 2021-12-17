@@ -1,6 +1,5 @@
 const express = require("express")
 
-const courses = require("../models/courses.model");
 const checkin = require("../models/checkIn.model");
 
 const router = express.Router()
