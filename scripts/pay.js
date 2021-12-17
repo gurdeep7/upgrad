@@ -1,17 +1,19 @@
+
+var user_id = JSON.parse(localStorage.getItem("user_id"))
+//console.log(user_id)
 var details = JSON.parse(localStorage.getItem("User_data"))
 var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
 
 var raw = JSON.stringify({
-  "user": "61b8ccfe3d58aecf68543b38",
-  "courses": [
-    "61b86570dd5eb249ad475bb7"
-  ]
+  "user_id": user_id,//get userid from localstorage
+  "checkIncourse_id": 
+    "61b86570dd5eb249ad475bb7"//get courseid from localstorage na yet
 });
 
 var requestOptions = {
   method: 'POST',
-  headers: myHeaders,
+  headers: myHeaders,//post user with course on checkout data
   body: raw,
   redirect: 'follow'
 };
@@ -20,8 +22,8 @@ fetch("http://localhost:3000/checkout", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
-
-console.log(result)
+//console.log(response)
+//console.log(result)
 if(details.name != undefined){
  var name1 = details.name.split(" ")
 }

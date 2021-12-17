@@ -10,10 +10,10 @@ const router = express.Router()
 router.post("/",async(req,res)=>{
    try {
        const checkout = await Checkout.create(req.body)
-        const user =await User.find().lean().exec()
-        const course=await Course.find().lean().exec();
+       // const user =await User.find().lean().exec()
+       // const course=await Course.find().lean().exec();
 
-    res.status(200).send({checkout,user,course})
+    res.status(200).send({checkout})
 }catch(e){
 
     res.status(500).json({status:e.message})
