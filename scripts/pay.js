@@ -17,10 +17,10 @@ var requestOptions = {
   body: raw,
   redirect: 'follow'
 };
-
+var result1;
 fetch("https://upgrad78.herokuapp.com/", requestOptions)
   .then(response => response.text())
-  .then(result => console.log(result))
+  .then(result => result1 = result)
   .catch(error => console.log('error', error));
 //console.log(response)
 //console.log(result)
@@ -92,8 +92,20 @@ last_name.value = name1[1]
 
 
 function SenData(){
-
+  if(city.length < 3){
+    alert("Enter valid city")
+    return
+  }
+  if(state.length < 2){
+    alert("Enter state")
+  }
+if(result1.status = "passed"){
+  if(city.length < 3){
   localStorage.setItem("User_data",JSON.stringify([]));
 
   window.location.href = "thankyou.html"
+}else{
+  alert("Authorization failed")
+}
+}
 }
