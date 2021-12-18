@@ -1,4 +1,4 @@
- 
+
  let f_name = document.getElementById("f_name")
 
  let l_name = document.getElementById("l_name")
