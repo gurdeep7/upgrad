@@ -1,27 +1,29 @@
+var user_id = JSON.parse(localStorage.getItem("user_id"))
+var course_id = JSON.parse(localStorage.getItem("course_id"))
+
+//console.log(user_id)
 var details = JSON.parse(localStorage.getItem("User_data"))
 var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
 
 var raw = JSON.stringify({
-  "user": "61b8ccfe3d58aecf68543b38",
-  "courses": [
-    "61b86570dd5eb249ad475bb7"
-  ]
+  user_id, //get userid from localstorage//done
+  course_id, //get courseid from localstorage na yet//done after providing id
 });
 
 var requestOptions = {
   method: 'POST',
-  headers: myHeaders,
+  headers: myHeaders,//post user with course on checkout data//done data stored in database as checkout required to send email of this detail
   body: raw,
   redirect: 'follow'
 };
 
-fetch("http://localhost:3000/checkout", requestOptions)
+fetch("https://upgrad78.herokuapp.com/", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
-
-console.log(result)
+//console.log(response)
+//console.log(result)
 if(details.name != undefined){
  var name1 = details.name.split(" ")
 }
@@ -95,7 +97,3 @@ function SenData(){
 
   window.location.href = "thankyou.html"
 }
-
-
-
-

@@ -12,6 +12,8 @@ const checkinController = require("./controllers/checkIn.controller")
 
 const userCourseDetailController = require("./controllers/userCourseDetails.controller");
 
+const checkoutController =require("./controllers/checkout.controller")
+
 const cors = require("cors");
 const { verify } = require("./configs/mail");
 
@@ -31,5 +33,7 @@ app.get("/check/:id/:otp",verifyotp)
 app.use("/checkin", checkinController)
 
 app.use("/usercoursedetail", userCourseDetailController);
+
+app.use("/checkout",checkoutController)
 
 module.exports = app

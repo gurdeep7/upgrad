@@ -11,7 +11,7 @@ router.post("/",authenticate, async(req,res)=>{
    try {
         const UserCourseDetail =await userCourseDetail.create(req.body)
 
-    res.status(200).json({status:"passed",userCourseDetail})
+    res.status(200).json({status:"passed",UserCourseDetail})
 }catch(e){
 
     res.status(500).json({status:e.message})
@@ -21,7 +21,7 @@ router.post("/",authenticate, async(req,res)=>{
 router.get("/",authenticate, async(req,res)=>{
     try{
         const UserCourseDetail =await userCourseDetail.find().populate('user_id').populate('checkIncourse_id').lean().exec()
-        res.status(201).json({status:"passed",userCourseDetail})
+        res.status(201).json({status:"passed",UserCourseDetail})
     }catch(e){
         res.status(500).json({status:e.message})
     }
@@ -31,7 +31,7 @@ router.get("/:id", async (req, res)=>{
     try {
         const UserCourseDetail = await userCourseDetail.findById(req.params.id).populate('user_id').populate('checkIncourse_id').lean().exec();
 
-        return res.status(201).json({status:"passed",userCourseDetail});
+        return res.status(201).json({status:"passed",UserCourseDetail});
     } catch(e){
         return res.status(500).json({status: "Failed", message:e.message});
     }
@@ -41,7 +41,7 @@ router.delete("/:id", async (req, res)=>{
     try {
         const UserCourseDetail = await userCourseDetail.findByIdAndDelete(req.params.id).lean().exec();
 
-        return res.status(201).json({status:"passed",userCourseDetail});
+        return res.status(201).json({status:"passed",UserCourseDetail});
     } catch(e){
         return res.status(500).json({status: "Failed", message:e.message});
     }
