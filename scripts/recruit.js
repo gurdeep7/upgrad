@@ -1,11 +1,34 @@
+console.log("test")
 function sendData() {
-  event.preventDefault();
+ 
   //getting data from the form
   let Full_Name = document.getElementById("name").value;
   let designation = document.getElementById("designation").value;
   let company = document.getElementById("company").value;
   let email = document.getElementById("email").value;
   let phone = document.getElementById("tel").value;
+  if(Full_Name.length < 3){
+    alert("Enter Valid Name")
+    return;
+  }
+  if(designation.length < 3){
+    alert("Enter Valid Company Name")
+    return;
+  }
+  if(company.length < 3){
+    alert("Enter Valid Comany")
+    return
+  }
+  var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+  if (email.match(validRegex)) {
+
+
+  } else {
+    alert("Invalid Email")
+    return;
+  }
+
   //geting which of checkbox is checked
   let checkbox = [];
   if (document.getElementById("DataS").checked) {
