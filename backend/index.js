@@ -10,6 +10,8 @@ const { register, check, verifyotp } = require("./controllers/auth.controller");
 //const screeningController = require("./controllers/screening.controller");
 const checkinController = require("./controllers/checkIn.controller")
 
+const userCourseDetailController = require("./controllers/userCourseDetails.controller");
+
 const cors = require("cors");
 const { verify } = require("./configs/mail");
 
@@ -26,5 +28,8 @@ app.get("/",(req,res)=>{
 })
 app.get("/check/:id/:otp",verifyotp)
 
+app.use("/checkin", checkinController)
+
+app.use("/usercoursedetail", userCourseDetailController);
 
 module.exports = app
