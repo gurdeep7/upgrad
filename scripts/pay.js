@@ -99,7 +99,7 @@ function SenData(){
     return
   }
   fetch("https://upgrad78.herokuapp.com/checkout", requestOptions)
-  .then(response => response.text())
+  .then(response => response.json())
   .then(result => result1 = result)
   .catch(error => console.log('error', error));
 if(result1.status = "passed"){
