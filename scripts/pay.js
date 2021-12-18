@@ -1,6 +1,6 @@
 
 var user_id = JSON.parse(localStorage.getItem("user_id"))
-var checkIncourse_id = JSON.parse(localStorage.getItem("checkIncourse_id"))
+var course_id = JSON.parse(localStorage.getItem("course_id"))
 
 //console.log(user_id)
 var details = JSON.parse(localStorage.getItem("User_data"))
@@ -8,8 +8,8 @@ var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
 
 var raw = JSON.stringify({
-  "user_id": user_id,//get userid from localstorage//done
-  "checkIncourse_id": checkIncourse_id//get courseid from localstorage na yet//done after providing id
+  user_id, //get userid from localstorage//done
+  course_id, //get courseid from localstorage na yet//done after providing id
 });
 
 var requestOptions = {

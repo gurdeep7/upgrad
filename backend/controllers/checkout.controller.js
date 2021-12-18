@@ -22,7 +22,7 @@ router.post("/",async(req,res)=>{
 router.get("/",async(req,res)=>{
     
     try{
-        const checkout =await Checkout.find().populate("user_id").populate("checkIncourse_id").lean().exec()
+        const checkout =await Checkout.find().populate("user_id").populate("course_id").lean().exec()
         res.status(201).send(checkout)
     }catch(e){
         res.status(500).json({status:e.message})
@@ -31,7 +31,7 @@ router.get("/",async(req,res)=>{
 router.get("/:id",async(req,res)=>{
     
     try{
-        const checkout =await Checkout.findById(req.params.id).populate("user_id").populate("checkIncourse_id").lean().exec()
+        const checkout =await Checkout.findById(req.params.id).populate("user_id").populate("course_id").lean().exec()
         res.status(201).send(checkout);
     }catch(e){
         res.status(500).json({status:e.message})

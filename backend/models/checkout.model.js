@@ -6,7 +6,7 @@ const checkoutSchema = new mongoose.Schema({
         ref:"user",
         required:true
     },
-    checkIncourse_id: {
+    course_id: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'course',
         required: true
