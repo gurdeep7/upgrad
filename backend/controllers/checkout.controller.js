@@ -13,7 +13,7 @@ router.post("/",async(req,res)=>{
        // const user =await User.find().lean().exec()
        // const course=await Course.find().lean().exec();
        const checkout2 = await Checkout.findById(checkout._id).populate("user_id").populate("course_id").lean().exec()
-       const checkin = await CheckIn.find({course_id:checkout.course_id}).lean().exec()
+       const checkin = await CheckIn.findOne({course_id:checkout.course_id}).lean().exec()
        const checkin2 = await CheckIn.findByIdAndDelete(checkin._id).lean().exec()
         sendMail(
           "admin@upgrad.com",

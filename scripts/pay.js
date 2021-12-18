@@ -1,3 +1,4 @@
+
 var user_id = JSON.parse(localStorage.getItem("user_id"))
 var course_id = JSON.parse(localStorage.getItem("course_id"))
 
@@ -100,15 +101,22 @@ function SenData(){
   }
   fetch("https://upgrad78.herokuapp.com/checkout", requestOptions)
   .then(response => response.json())
-  .then(result => result1 = result)
+  .then(result =>{
+  result1 = result
+  setTimeout(() => {
+    console.log(result1.status == "passed")
+    if(result1.status == "passed"){
+      
+      localStorage.setItem("User_data",JSON.stringify([]));
+    
+      window.location.href = "thankyou.html"
+    }else {
+    console.log(result1.status)
+      alert("Authorization failed")
+    }
+  }, 500);
+}) 
   .catch(error => console.log('error', error));
-if(result1.status = "passed"){
-  if(city.length < 3){
-  localStorage.setItem("User_data",JSON.stringify([]));
+  
 
-  window.location.href = "thankyou.html"
-}else{
-  alert("Authorization failed")
-}
-}
 }
