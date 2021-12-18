@@ -56,11 +56,7 @@ last_name.value = name1[1]
   address_line2 = document.getElementById("addres2").value;
 
   //city
-  city = document.getElementById("city").value;
-  //state
-  state = document.getElementById("state").value;
-  //country
-  country = document.getElementById("country").value;
+  
   //regestration number
 
   var coursename = document.getElementById("coursename")
@@ -92,6 +88,11 @@ last_name.value = name1[1]
 
 
 function SenData(){
+  city = document.getElementById("city").value;
+  //state
+  state = document.getElementById("state").value;
+  //country
+  country = document.getElementById("country").value;
   if(city.length < 3){
     alert("Enter valid city")
     return
