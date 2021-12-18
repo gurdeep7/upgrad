@@ -99,6 +99,7 @@ function SenData(){
   }
   if(state.length < 2){
     alert("Enter state")
+    return
   }
 if(result1.status = "passed"){
   if(city.length < 3){
