@@ -18,10 +18,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 var result1;
-fetch("https://upgrad78.herokuapp.com/", requestOptions)
-  .then(response => response.text())
-  .then(result => result1 = result)
-  .catch(error => console.log('error', error));
+
 //console.log(response)
 //console.log(result)
 if(details.name != undefined){
@@ -101,6 +98,10 @@ function SenData(){
     alert("Enter state")
     return
   }
+  fetch("https://upgrad78.herokuapp.com/checkout", requestOptions)
+  .then(response => response.text())
+  .then(result => result1 = result)
+  .catch(error => console.log('error', error));
 if(result1.status = "passed"){
   if(city.length < 3){
   localStorage.setItem("User_data",JSON.stringify([]));
