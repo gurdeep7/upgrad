@@ -56,7 +56,7 @@ function showcourse(value){
  function showondrop(data){
     sidedropdown.innerHTML = null;
 
-    data.forEach(({title,logo,Duration,university,link,offer}) => {
+    data.forEach(({_id,title,logo,Duration,university,link,offer}) => {
         let div = document.createElement("div")
         div.style.margin = "20px"
         div.onclick = ()=>{

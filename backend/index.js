@@ -14,8 +14,9 @@ const userCourseDetailController = require("./controllers/userCourseDetails.cont
 
 const checkoutController =require("./controllers/checkout.controller")
 
+const recruitController = require("./controllers/recruit.controller");
+
 const cors = require("cors");
-const { verify } = require("./configs/mail");
 
 app.use(cors())
 
@@ -35,5 +36,7 @@ app.use("/checkin", checkinController)
 app.use("/usercoursedetail", userCourseDetailController);
 
 app.use("/checkout",checkoutController)
+
+app.use("/recruits", recruitController);
 
 module.exports = app
