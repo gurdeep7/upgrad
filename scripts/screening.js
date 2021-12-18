@@ -28,7 +28,7 @@ if(name[1] != undefined){
 
  let noGender = document.getElementById("noGender")
  var gen_flag = 0;
- let gender = ""
+ var gender = ""
  male.addEventListener("click",()=>{
      gender = "Male"
      male.setAttribute("class","border-box border-4 p-4 bg-blue-500 text-xl font-bold text-upgrad-blue rounded-2xl" )
@@ -60,7 +60,7 @@ var g_flag = 0
 let g_yes = document.getElementById("g_yes")
 
 let g_no = document.getElementById("g_no")
-let graduation = ""
+var graduation = ""
 g_yes.addEventListener("click",()=>{
     graduation = "Yes"
     g_yes.setAttribute("class","border-box border-4 p-4 bg-green-500 text-xl font-bold text-upgrad-blue rounded-2xl")
