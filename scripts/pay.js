@@ -75,7 +75,7 @@ last_name.value = name1[1]
   total_fee.textContent = total
 
   var taxAmount = document.getElementById("taxAmount")
- //round off
+ 
   let tax = Math.round(total * 0.152542)
 
   taxAmount.textContent = tax
