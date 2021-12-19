@@ -14,7 +14,7 @@ https://gurdeep7.github.io/upgrad/html/index.html
 3. Deepesh
 4. Dinesh Kumar
 5. Kapish Singh
-6. Madhu Sudhanan
+6. Anand Kumar Sharma
 
 ## Technologies Used
 > <img src = "https://i.stack.imgur.com/PgcSR.png" width = "100" height = "100" alt = "HTML Logo"/>
