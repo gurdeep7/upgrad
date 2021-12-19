@@ -1,13 +1,13 @@
 console.log("test")
-function sendData() {
- 
+async function sendData(event) {
+ event.preventDefault()
   //getting data from the form
-  let Full_Name = document.getElementById("name").value;
+  let full_name = document.getElementById("name").value;
   let designation = document.getElementById("designation").value;
   let company = document.getElementById("company").value;
   let email = document.getElementById("email").value;
-  let phone = document.getElementById("tel").value;
-  if(Full_Name.length < 3){
+  let phone_number = document.getElementById("tel").value;
+  if(full_name.length < 3){
     alert("Enter Valid Name")
     return;
   }
@@ -43,17 +43,28 @@ function sendData() {
     checkbox.push("Software Development");
   }
   //object for loacl sorage
-  let data = {
-    Full_Name: Full_Name,
-    designation: designation,
-    company: company,
-    email: email,
-    phone: phone,
-    checkbox: checkbox,
+  var data = {
+    full_name,
+    designation,
+    company,
+    email,
+    phone_number,
+    checkbox
   };
   //prepare data to send to local storage
-  let dataToSend = JSON.stringify(data);
+var raw = JSON.stringify(data)
   //send data to local storage
-  localStorage.setItem("data", dataToSend);
+var sendRequest = await fetch("https://upgrad78.herokuapp.com/recruits",
+{'method': "POST",
+"headers":{"Content-Type": "application/json"},
+"body":raw
+}
+)
+var recievedData = await sendRequest.json()
+
+if(recievedData != undefined){
+  console.log(recievedData)
+  alert("Email send to you for further details")
+}
 }
 
