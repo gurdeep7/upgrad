@@ -31,6 +31,9 @@ https://gurdeep7.github.io/upgrad/html/index.html
 > <img src = "images/reserveSeat.jpg" style="width:300px" alt = "Reserve Seat" /> &emsp; 
 > <img src = "images/paymentPage.jpg" style="width:300px" alt = "Payment Page" /> &emsp; 
 > <img src = "images/thankYou.jpg" style="width:300px" alt = "Thank You" /> &emsp; 
+> <img src = "images/upgrad_backend1.jpg" style="width:300px" alt = "Thank You" /> &emsp; 
+> <img src = "images/thankYou.jpg" style="width:300px" alt = "Thank You" /> &emsp; 
+
 
 
 
