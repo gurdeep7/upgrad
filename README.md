@@ -14,7 +14,7 @@ https://paragpatil187.github.io/upgrad/html/index.html
 3. Deepesh
 4. Dinesh Kumar
 5. Kapish Singh
-6. Madhu Sudhanan
+6. Anand Kumar Sharma
 
 ## Technologies Used
 > <img src = "https://i.stack.imgur.com/PgcSR.png" width = "100" height = "100" alt = "HTML Logo"/>
@@ -27,10 +27,14 @@ https://paragpatil187.github.io/upgrad/html/index.html
 > <img src = "images/homePage.png" style="width:300px" alt = "Home Page" />  &emsp;
 > <img src = "images/coursePage.jpg" style="width:300px" alt = "Course Page" /> &emsp;
 > <img src = "images/loginPage.jpg" style="width:300px" alt = "Login Page" /> &emsp;
+<!-- > <img src = "images/upgrad_backend2.jpeg" style="width:300px" alt = "OTP" /> &emsp;  -->
 > <img src = "images/applicationPage.jpg" style="width:300px" alt = "Application Page" /> &emsp;
 > <img src = "images/reserveSeat.jpg" style="width:300px" alt = "Reserve Seat" /> &emsp; 
 > <img src = "images/paymentPage.jpg" style="width:300px" alt = "Payment Page" /> &emsp; 
 > <img src = "images/thankYou.jpg" style="width:300px" alt = "Thank You" /> &emsp; 
+> <img src = "images/upgrad_backend1.jpeg" style="width:300px" alt = "Email" /> &emsp; 
+> 
+
 
 
 

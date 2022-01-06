@@ -1,7 +1,27 @@
+
+var user_id = JSON.parse(localStorage.getItem("user_id"))
+var course_id = JSON.parse(localStorage.getItem("course_id"))
+
+//console.log(user_id)
 var details = JSON.parse(localStorage.getItem("User_data"))
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
 
+var raw = JSON.stringify({
+  user_id, //get userid from localstorage//done
+  course_id, //get courseid from localstorage na yet//done after providing id
+});
 
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,//post user with course on checkout data//done data stored in database as checkout required to send email of this detail
+  body: raw,
+  redirect: 'follow'
+};
+var result1;
 
+//console.log(response)
+//console.log(result)
 if(details.name != undefined){
  var name1 = details.name.split(" ")
 }
@@ -34,11 +54,7 @@ last_name.value = name1[1]
   address_line2 = document.getElementById("addres2").value;
 
   //city
-  city = document.getElementById("city").value;
-  //state
-  state = document.getElementById("state").value;
-  //country
-  country = document.getElementById("country").value;
+  
   //regestration number
 
   var coursename = document.getElementById("coursename")
@@ -70,12 +86,37 @@ last_name.value = name1[1]
 
 
 function SenData(){
+  city = document.getElementById("city").value;
+  //state
+  state = document.getElementById("state").value;
+  //country
+  country = document.getElementById("country").value;
+  if(city.length < 3){
+    alert("Enter valid city")
+    return
+  }
+  if(state.length < 2){
+    alert("Enter state")
+    return
+  }
+  fetch("https://upgrad78.herokuapp.com/checkout", requestOptions)
+  .then(response => response.json())
+  .then(result =>{
+  result1 = result
+  setTimeout(() => {
+    console.log(result1.status == "passed")
+    if(result1.status == "passed"){
+      
+      localStorage.setItem("User_data",JSON.stringify([]));
+    
+      window.location.href = "thankyou.html"
+    }else {
+    console.log(result1.status)
+      alert("Authorization failed")
+    }
+  }, 500);
+}) 
+  .catch(error => console.log('error', error));
+  
 
-  localStorage.setItem("User_data",JSON.stringify([]));
-
-  window.location.href = "thankyou.html"
 }
-
-
-
-
