@@ -1,7 +1,8 @@
 
 # UpGrad - Clone
 
->It is South Asia’s largest higher EdTech company. With the latest technology, pedagogy, industry partners and world-class faculty, They create immersive online learning experiences for our learners globally.
+>It is a clone of upgrad.com. We used HTML, JavaScript, Tailwind CSS, Mongo DB, and Express JS  in this Project. We implement features like login by OTP method, Token Authorisation, and sending Confirmation email when a user buys a course.
+
 
 ## Hosted Platform
 
