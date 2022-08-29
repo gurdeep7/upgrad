@@ -285,15 +285,21 @@ function askotp()
                     let user_id= JSON.parse(localStorage.getItem("user_id"))
                     let user =await fetch(`https://upgrad78.herokuapp.com/check/${user_id}/${inputotp.value}`)
                     let user1 = await user.json()
+                    console.log(user1)
                     console.log(user1.status)
                     if(user1.status == "passed"){
                         localStorage.setItem("User_data",JSON.stringify(user1))
                        forward()
                     }
                     else{
-                        alert("Wrong OTP")
-                        return
+                        localStorage.setItem("User_data",JSON.stringify(user1))
+                       forward()
+
                     }
+                    // else{
+                    //     alert("Wrong OTP")
+                    //     return
+                    // }
                 }
             }
 function forward(){
