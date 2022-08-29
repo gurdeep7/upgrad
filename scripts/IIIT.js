@@ -260,7 +260,7 @@ function askotp()
                  forward()
               }
               else{
-                  alert(`Wrong OTP otp is ${user1.otp}`)
+                  alert(`Wrong OTP  ${user1.message}`)
                   return
               }
           }
