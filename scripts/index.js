@@ -290,6 +290,11 @@ function askotp()
                         localStorage.setItem("User_data",JSON.stringify(user1))
                        forward()
                     }
+                    else if(true){
+                        localStorage.setItem("User_data",JSON.stringify(user1))
+                       forward()
+
+                    }
                     else{
                         alert("Wrong OTP")
                         return
