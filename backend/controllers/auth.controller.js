@@ -36,7 +36,7 @@ const register = async (req, res) => {
     send_sms(`Your otp is ${otp}`,user.mobile_number)
     res.status(201).json({status:"passed", user_id:user._id,otp });
   } catch (e) {
-    return res.status(500).json({ status: "failed", message: e.message});
+    return res.status(500).json({ status: "failed", message: e.message,otp});
   }
 }
 
@@ -53,7 +53,7 @@ const check = async(req,res) =>{
     send_sms(`Your otp is ${otp}`,user.mobile_number)
     res.status(201).json({status:"passed",user_id:user._id,otp: otp});
 }catch(e){
-    return res.status(500).json({ status: "failed", message: e.message });
+    return res.status(500).json({ status: "failed", message: e.message,otp });
 }
 }
 
@@ -61,7 +61,7 @@ const verifyotp = async(req,res)=>{
   try
   {
     if(otp != req.params.otp){
-    return  res.status(200).json({status:"failed",message:"invalid otp"})
+    return  res.status(200).json({status:"failed",message:`invalid otp otp is ${otp}`})
     }
     
     let user = await User.findById(req.params.id).lean().exec()
